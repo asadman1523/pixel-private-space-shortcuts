@@ -1,10 +1,10 @@
 plugins { id("com.android.application") }
 
 android {
-    namespace = "io.github.asadman1523.privatespaceshortcuts"
+    namespace = "com.jackwu.privatespaceshortcuts"
     compileSdk = 37
     defaultConfig {
-        applicationId = "io.github.asadman1523.privatespaceshortcuts"
+        applicationId = "com.jackwu.privatespaceshortcuts"
         minSdk = 35
         targetSdk = 37
         versionCode = 3
