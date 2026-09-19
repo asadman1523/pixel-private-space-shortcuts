@@ -16,7 +16,7 @@ Demo recording is pending device verification. No simulated demonstration is pre
 
 ## Features
 
-Long-press an app in unlocked Private Space and choose the native **Add to Home screen** action. The module uses Pixel Launcher’s placement, database, icons and private-profile lock badge. It identifies the target by profile serial number and launch component, rejects duplicates, and supports moving, folders and removal.
+Long-press an app in unlocked Private Space and choose the native **Add to Home screen** action, or drag it directly to the Home screen. This also works for private apps shown in the suggestion row at the top of All Apps. The module uses Pixel Launcher's placement, database, icons and private-profile lock badge. It identifies the target by profile serial number and launch component, rejects duplicates, and supports moving, folders and removal.
 
 When locked, the shortcut is designed to retain its position and request system authentication on tap. An unlocked profile opens directly. Pending launches are consumed once and cleared on cancellation, timeout or Launcher destruction. The owner-profile copy is never a fallback. Only module-created items receive these changes; widgets and app-internal shortcuts are outside this release.
 
@@ -42,7 +42,7 @@ The information page includes an **Open LSPosed** button. A standalone manager o
 
 ## Usage
 
-Unlock Private Space, long-press an app, and select **Add to Home screen**. Tap its Home screen icon to open the same private copy; authenticate in Android’s own prompt if needed. Cancel to abandon that launch. Long-press the Home screen icon to move it, place it in a folder, or remove it. Adding the same target again shows an existing-shortcut message. The module’s information app can also be installed in Private Space as a harmless test fixture.
+Unlock Private Space, long-press an app, and select **Add to Home screen**, or drag it to the Home screen. Private apps in the suggestion row can also be added the same way. Tap its Home screen icon to open the same private copy; authenticate in Android's own prompt if needed. Cancel to abandon that launch. Long-press the Home screen icon to move it, place it in a folder, or remove it. Adding the same target again shows an existing-shortcut message. The module's information app can also be installed in Private Space as a harmless test fixture.
 
 <a id="build"></a>
 

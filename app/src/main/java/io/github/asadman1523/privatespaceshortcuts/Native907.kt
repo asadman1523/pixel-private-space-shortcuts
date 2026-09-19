@@ -15,6 +15,7 @@ import android.os.SystemClock
 import android.os.UserHandle
 import android.os.UserManager
 import android.util.SparseArray
+import android.view.MotionEvent
 import android.view.View
 import android.widget.Toast
 import de.robv.android.xposed.XC_MethodHook
@@ -22,6 +23,8 @@ import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.XposedHelpers
 import java.lang.ref.WeakReference
 import java.lang.reflect.Method
+import java.util.Collections
+import java.util.WeakHashMap
 import java.util.function.Consumer
 
 /** These entrypoints are verified against the device APK fingerprint, not AOSP guesses. */
@@ -31,6 +34,7 @@ class Native907(private val app: Application, private val loader: ClassLoader) {
     private val main = Handler(Looper.getMainLooper())
     private val gate = LaunchGate(SystemClock::elapsedRealtime)
     private val adding = mutableSetOf<TargetKey>()
+    private val addActions = Collections.newSetFromMap(WeakHashMap<Any, Boolean>())
     private var activity = WeakReference<Activity>(null)
     private var foreground = false
     private val hooks = mutableListOf<XC_MethodHook.Unhook>()
@@ -50,6 +54,10 @@ class Native907(private val app: Application, private val loader: ClassLoader) {
         val addItems = method(cls("model.BgDataModel"), "addItems", 3)
         val updateItems = method(cls("model.BgDataModel"), "updateItems", 2)
         val newIcon = method(cls("model.data.ItemInfoWithIcon"), "newIcon", 2)
+        val beginDrag = method(cls("Workspace"), "beginDragShared", 6)
+        val acceptWorkspaceDrop = method(cls("Workspace"), "acceptDrop", 1)
+        val acceptFolderDrop = method(cls("folder.Folder"), "acceptDrop", 1)
+        val newIntent = method(launcherClass, "onNewIntent", 1)
         // Validate the native factory and all required constructors before changing behavior.
         XposedHelpers.getStaticObjectField(shortcutClass, "ADD_TO_HOME_SCREEN")
         workspaceClass.getConstructor(appInfoClass)
@@ -59,7 +67,9 @@ class Native907(private val app: Application, private val loader: ClassLoader) {
             hook(populate, before = { p -> addMenuEntry(p) })
             hook(shortcutClick, before = { p ->
                 val item = field(p.thisObject, "mItemInfo")
-                if (ownedKey(item) != null) {
+                // R8 merged Add, Remove and Install into this class. Only our exact
+                // factory-created action is an Add; desktop Remove must run natively.
+                if (p.thisObject in addActions && ownedKey(item) != null) {
                     p.result = null
                     addToHome(p.thisObject, item)
                 }
@@ -76,9 +86,35 @@ class Native907(private val app: Application, private val loader: ClassLoader) {
             hook(addItems, before = { p -> (p.args[1] as List<*>).forEach(::prepareOwnedItem) })
             hook(updateItems, before = { p -> (p.args[0] as List<*>).forEach(::prepareOwnedItem) })
             hook(newIcon, before = { p -> prepareOwnedItem(p.thisObject) })
+            hook(beginDrag, before = { p ->
+                val item = p.args[3]
+                // Regular All Apps item or prediction row item (not yet owned).
+                if (appInfoClass.isInstance(item) ||
+                    (workspaceClass.isInstance(item) && !isOwned(item))) {
+                    // Copy only the drag payload. The source list keeps its original item.
+                    ownedCopy(item)?.let {
+                        p.args[3] = it
+                        LauncherModule.log("Private app drag uses owned workspace payload")
+                    }
+                }
+            })
+
+            hook(newIntent, before = { p ->
+                val intent = p.args[0] as Intent
+                if (intent.action == Intent.ACTION_MAIN && intent.hasCategory(Intent.CATEGORY_HOME)) {
+                    gate.interacted()
+                }
+            })
+            hook(Activity::class.java.getDeclaredMethod("dispatchTouchEvent", MotionEvent::class.java), before = { p ->
+                if (launcherClass.isInstance(p.thisObject) &&
+                    (p.args[0] as MotionEvent).actionMasked == MotionEvent.ACTION_DOWN) {
+                    gate.interacted()
+                }
+            })
             app.registerActivityLifecycleCallbacks(lifecycle)
             val filter = IntentFilter().apply {
                 addAction(Intent.ACTION_PROFILE_AVAILABLE)
+                addAction(Intent.ACTION_PROFILE_ACCESSIBLE)
                 addAction(Intent.ACTION_USER_UNLOCKED)
             }
             app.registerReceiver(profileReceiver, filter, Context.RECEIVER_NOT_EXPORTED)
@@ -91,48 +127,49 @@ class Native907(private val app: Application, private val loader: ClassLoader) {
 
     private fun addMenuEntry(p: XC_MethodHook.MethodHookParam) {
         val item = field(p.thisObject, "itemInfo") ?: return
-        if (!appInfoClass.isInstance(item)) return
-        val user = field(item, "user") as? UserHandle ?: return
-        if (!privateProfile(user)) return
-        val serial = users.getSerialNumberForUser(user)
-        val component = call(item, "getTargetComponent") as? ComponentName ?: return
-        if (serial < 0) return
-        val copy = workspaceClass.getConstructor(appInfoClass).newInstance(item)
-        val intent = Intent(field(copy, "intent") as Intent)
-            .putExtra(OWNER, true).putExtra(SERIAL, serial)
-        XposedHelpers.setObjectField(copy, "intent", intent)
-        XposedHelpers.setIntField(copy, "container", -104) // Native factory accepts All Apps items.
-        prepareOwnedItem(copy)
+        val copy = ownedCopy(item) ?: return
+        val key = ownedKey(copy) ?: return
         val target = field(p.thisObject, "mActivityContext") ?: return
         val view = field(p.thisObject, "originalView") as? View ?: return
         val factory = XposedHelpers.getStaticObjectField(shortcutClass, "ADD_TO_HOME_SCREEN")
         val native = call(factory, "getShortcut", target, copy, view) ?: return
         @Suppress("UNCHECKED_CAST")
         val rows = (p.args[1] as List<Any>).toMutableList()
-        if (rows.none { ownedKey(field(it, "mItemInfo")) == TargetKey(serial, component.flattenToString()) }) {
+        if (rows.none { it in addActions && ownedKey(field(it, "mItemInfo")) == key }) {
+            addActions.add(native)
             rows.add(native)
             p.args[1] = rows
         }
     }
 
+    private fun ownedCopy(item: Any): Any? {
+        val copy: Any
+        if (appInfoClass.isInstance(item)) {
+            // Regular All Apps item.
+            copy = workspaceClass.getConstructor(appInfoClass).newInstance(item)
+        } else if (workspaceClass.isInstance(item)) {
+            // Prediction row item (already WorkspaceItemInfo, container -103).
+            val existing = field(item, "intent") as? Intent ?: return null
+            if (existing.getBooleanExtra(OWNER, false)) return null // Already owned.
+            copy = workspaceClass.getConstructor(workspaceClass).newInstance(item)
+        } else return null
+        val user = field(copy, "user") as? UserHandle ?: return null
+        if (!privateProfile(user)) return null
+        val serial = users.getSerialNumberForUser(user)
+        if (call(copy, "getTargetComponent") !is ComponentName || serial < 0) return null
+        val intent = Intent(field(copy, "intent") as Intent)
+            .putExtra(OWNER, true).putExtra(SERIAL, serial)
+        XposedHelpers.setObjectField(copy, "intent", intent)
+        XposedHelpers.setIntField(copy, "container", -104) // Native factory accepts All Apps items.
+        prepareOwnedItem(copy)
+        return copy
+    }
+
+
     private fun addToHome(shortcut: Any, item: Any?) {
         val key = ownedKey(item) ?: return
         val launcher = field(shortcut, "mTarget") as? Activity ?: return
-        val model = field(field(launcher, "mModel"), "mBgDataModel") ?: return
-        val holder = field(model, "itemsIdMap") ?: return
-        @Suppress("UNCHECKED_CAST")
-        val map = field(holder, "itemsIdMap") as SparseArray<Any>
-        val exists = synchronized(model) {
-            (0 until map.size()).any { i ->
-                val existing = map.valueAt(i)
-                val user = field(existing, "user") as? UserHandle
-                user != null && users.getSerialNumberForUser(user) == key.profileSerial &&
-                    (call(existing, "getTargetComponent") as? ComponentName)?.flattenToString() == key.component
-            }
-        }
-        if (exists || !adding.add(key)) {
-            LauncherModule.log("Duplicate shortcut rejected")
-            toast("Already on the Home screen", "已經加入主畫面")
+        if (!adding.add(key)) {
             return
         }
         call(shortcut, "dismissTaskMenuView")
@@ -182,8 +219,8 @@ class Native907(private val app: Application, private val loader: ClassLoader) {
         if (users.isQuietModeEnabled(user) || !users.isUserUnlocked(user)) {
             if (!gate.begin(key)) return
             LauncherModule.log("Awaiting private profile authentication")
-            // Expire by the current request's own timestamp; an old timer cannot cancel a new tap.
-            main.postDelayed({ gate.current() }, 120_000)
+            main.removeCallbacks(readinessPoll)
+            main.postDelayed(readinessPoll, 100)
             try {
                 // The foreground default launcher's system API presents the real credential UI.
                 val accepted = users.requestQuietModeEnabled(false, user)
@@ -222,6 +259,16 @@ class Native907(private val app: Application, private val loader: ClassLoader) {
         gate.ready(key, users.isQuietModeEnabled(user), users.isUserUnlocked(user))?.let(::start)
     }
 
+    // PROFILE_AVAILABLE can precede credential-encrypted user readiness, and USER_UNLOCKED
+    // for the private user is not guaranteed to reach this parent-user receiver. Recheck
+    // while this bounded request is alive; broadcasts are a hint, not the only trigger.
+    private val readinessPoll = object : Runnable {
+        override fun run() {
+            guarded { checkReady() }
+            if (gate.current() != null) main.postDelayed(this, if (foreground) 100 else 500)
+        }
+    }
+
     private val profileReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context, intent: Intent) = guarded { checkReady() }
     }
@@ -235,9 +282,10 @@ class Native907(private val app: Application, private val loader: ClassLoader) {
                 val key = gate.current() ?: return@guarded
                 val user = resolveUser(key) ?: run { gate.cancel(); return@guarded }
                 val quiet = users.isQuietModeEnabled(user)
-                gate.returned(quiet, users.isUserUnlocked(user))?.let(::start)
+                val unlocked = users.isUserUnlocked(user)
+                gate.returned(quiet, unlocked)?.let(::start)
                 LauncherModule.log(if (quiet) "Authentication cancelled; request cleared"
-                    else "Returned from system authentication")
+                    else "Returned from system authentication; profile ready=$unlocked")
             }
         }
         override fun onActivityPaused(a: Activity) {

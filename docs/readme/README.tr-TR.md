@@ -16,7 +16,7 @@ Tanıtım, cihaz doğrulamasından sonra kaydedilecek. Benzetimler gerçek test 
 
 ## Özellikler
 
-Kilidi açık Özel Alan’da uygulamaya uzun basıp **Ana ekrana ekle** seçeneğini kullanın. Modül, Pixel Launcher yerleşimini, veritabanını, simgelerini ve kilit rozetini kullanır. Profil seri numarası ve başlatma bileşeni hedefi tanımlar, tekrarları önler. Taşıma, klasörler ve kaldırma desteklenir.
+Kilidi açık Özel Alan’da uygulamaya uzun basıp **Ana ekrana ekle** seçeneğini kullanın veya doğrudan Ana ekrana sürükleyin. Bu, Tüm Uygulamalar’ın üstündeki öneri satırında gösterilen özel uygulamalar için de geçerlidir. Modül, Pixel Launcher yerleşimini, veritabanını, simgelerini ve kilit rozetini kullanır. Profil seri numarası ve başlatma bileşeni hedefi tanımlar, tekrarları önler. Taşıma, klasörler ve kaldırma desteklenir.
 
 Kilitliyken kısayolun konumunu koruması ve dokununca sistem doğrulaması istemesi amaçlanır. Kilit açıkken aynı özel kopya doğrudan açılır. İstek yalnızca bir kez çalışır; iptal, zaman aşımı veya Launcher yok edilince temizlenir. Ana profil kopyasına geçilmez. Yalnızca modülün oluşturduğu öğeler değiştirilir; widget ve uygulama içi kısayollar kapsam dışıdır. Kilitliyken de uygulama adı ve simgesi görünür.
 
@@ -40,7 +40,7 @@ Bilgi sayfasında **LSPosed’i aç** düğmesi bulunur. Bağımsız yönetici d
 
 ## Kullanım
 
-Özel Alan kilidini açın, uygulamaya uzun basıp ana ekrana ekleyin. Simgeye dokununca aynı özel kopya açılır; gerekirse Android’de doğrulayın. İptal etmek isteği siler. Simgeye uzun basarak taşıyabilir, klasöre koyabilir veya kaldırabilirsiniz. Tekrar ekleme mevcut kısayol uyarısı verir. Modülün bilgi uygulaması hassas veri içermeyen bir test olarak Özel Alan’a da kurulabilir.
+Özel Alan kilidini açın, uygulamaya uzun basıp **Ana ekrana ekle** seçeneğini kullanın veya ana ekrana sürükleyin. Öneri satırındaki özel uygulamalar da aynı şekilde eklenebilir. Simgeye dokununca aynı özel kopya açılır; gerekirse Android’de doğrulayın. İptal etmek isteği siler. Simgeye uzun basarak taşıyabilir, klasöre koyabilir veya kaldırabilirsiniz. Tekrar ekleme mevcut kısayol uyarısı verir. Modülün bilgi uygulaması hassas veri içermeyen bir test olarak Özel Alan’a da kurulabilir.
 
 <a id="build"></a>
 

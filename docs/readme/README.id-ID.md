@@ -16,7 +16,7 @@ Demonstrasi akan direkam setelah verifikasi perangkat; simulasi tidak dinyatakan
 
 ## Fitur
 
-Tekan lama aplikasi di Ruang Pribadi yang terbuka lalu pilih **Tambahkan ke layar utama**. Modul memakai penempatan, basis data, ikon, dan lencana gembok Pixel Launcher. Nomor seri profil dan komponen peluncuran menentukan tujuan serta mencegah duplikasi. Mendukung pemindahan, folder, dan penghapusan.
+Tekan lama aplikasi di Ruang Pribadi yang terbuka lalu pilih **Tambahkan ke layar utama**, atau seret langsung ke layar utama. Ini juga berfungsi untuk aplikasi pribadi di baris saran di bagian atas Semua Aplikasi. Modul memakai penempatan, basis data, ikon, dan lencana gembok Pixel Launcher. Nomor seri profil dan komponen peluncuran menentukan tujuan serta mencegah duplikasi. Mendukung pemindahan, folder, dan penghapusan.
 
 Saat terkunci, pintasan dirancang untuk mempertahankan posisi dan meminta autentikasi sistem ketika diketuk. Jika terbuka, salinan pribadi langsung dijalankan. Permintaan hanya dijalankan sekali dan dihapus saat dibatalkan, kedaluwarsa, atau Launcher dihancurkan. Tidak beralih ke salinan profil utama. Hanya item buatan modul yang diubah; widget dan pintasan internal tidak termasuk. Nama dan ikon tetap terlihat saat Ruang Pribadi terkunci.
 
@@ -40,7 +40,7 @@ Halaman menyediakan tombol **Buka LSPosed**. Pengelola mandiri langsung terbuka;
 
 ## Penggunaan
 
-Buka Ruang Pribadi, tekan lama aplikasi dan tambahkan ke layar utama. Ketuk ikon untuk membuka salinan pribadi yang sama; autentikasi lewat Android bila diperlukan. Membatalkan membuang permintaan. Tekan lama ikon untuk memindah, memasukkan ke folder, atau menghapus. Penambahan ulang menampilkan pesan bahwa pintasan sudah ada. Aplikasi informasi modul dapat dipasang di Ruang Pribadi sebagai uji tanpa data sensitif.
+Buka Ruang Pribadi, tekan lama aplikasi lalu pilih **Tambahkan ke layar utama**, atau seret ke layar utama. Aplikasi pribadi di baris saran juga dapat ditambahkan dengan cara yang sama. Ketuk ikon untuk membuka salinan pribadi yang sama; autentikasi lewat Android bila diperlukan. Membatalkan membuang permintaan. Tekan lama ikon untuk memindah, memasukkan ke folder, atau menghapus. Penambahan ulang menampilkan pesan bahwa pintasan sudah ada. Aplikasi informasi modul dapat dipasang di Ruang Pribadi sebagai uji tanpa data sensitif.
 
 <a id="build"></a>
 
