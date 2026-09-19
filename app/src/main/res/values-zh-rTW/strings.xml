@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">私人空間捷徑</string>
+    <string name="module_description">替 Pixel 私人空間建立原生桌面捷徑。適用於 Android 17、Launcher 907。</string>
+</resources>
