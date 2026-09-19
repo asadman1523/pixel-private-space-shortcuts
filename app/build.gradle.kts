@@ -7,8 +7,8 @@ android {
         applicationId = "com.jackwu.privatespaceshortcuts"
         minSdk = 35
         targetSdk = 37
-        versionCode = 3
-        versionName = "0.1.0-alpha.3"
+        versionCode = 4
+        versionName = "0.1.0"
     }
     buildFeatures { buildConfig = true }
     compileOptions {
