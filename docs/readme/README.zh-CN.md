@@ -28,7 +28,7 @@ Read this in other languages: [English](../../README.md), **简体中文**, [繁
 
 ## 兼容性
 
-**实验性测试版，真机验证尚未完成。** 目标：Pixel 10a、Android 17／API 37、版本 `CP2A.260805.005`、Pixel Launcher 17（`907`）、Magisk 和 LSPosed 2.2.0（7854）。必须匹配[验证记录](../TESTING.md)中的 APK 指纹，其他版本停用适配器并记录原因。构建成功不代表真机兼容。
+**实验性测试版，真机验证尚未完成。** 目标支持 Android 15+（API 35+）Pixel 设备，但**目前仅在 Android 17 上测试**（Pixel 10a、API 37、`CP2A.260805.005`、Pixel Launcher 17）。适配器会尝试在 Android 15 和 16 上加载，但更新可能会导致内部 Hook 失效。构建成功不代表真机兼容。
 
 <a id="installation"></a>
 

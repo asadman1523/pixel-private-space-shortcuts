@@ -26,7 +26,7 @@ Gesperrte Verknüpfungen behalten ihre Farben und das native Schloss. Die Inform
 
 ## Kompatibilität
 
-**Experimentelle Alpha; Geräteprüfung unvollständig.** Ziel: Pixel 10a, Android 17 / API 37, `CP2A.260805.005`, Pixel Launcher 17 (`907`), Magisk, LSPosed 2.2.0 (7854). Der APK-Fingerabdruck muss dem [Prüfprotokoll](../TESTING.md) entsprechen. Andere Versionen deaktivieren den Adapter mit protokollierter Begründung. Ein erfolgreicher Build beweist keine Gerätekompatibilität.
+**Experimentelle Alpha; Geräteprüfung unvollständig.** Zielt auf Android 15+ (API 35+) Pixel-Geräte ab, ist jedoch **derzeit nur unter Android 17 getestet** (Pixel 10a, API 37, `CP2A.260805.005`, Pixel Launcher 17). Der Adapter wird versuchen, unter Android 15 und 16 zu laden, aber Updates können interne Hooks beschädigen. Ein erfolgreicher Build ist kein Beweis für Kompatibilität.
 
 <a id="installation"></a>
 

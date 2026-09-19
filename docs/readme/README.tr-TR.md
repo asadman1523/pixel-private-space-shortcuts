@@ -26,7 +26,7 @@ Kilitli kısayollar özgün renklerini ve yerel kilit rozetini korur. Bilgi sayf
 
 ## Uyumluluk
 
-**Deneysel alfa; cihaz doğrulaması tamamlanmadı.** Pixel 10a, Android 17 / API 37, `CP2A.260805.005`, Pixel Launcher 17 (`907`), Magisk, LSPosed 2.2.0 (7854). [Kayıttaki](../TESTING.md) APK parmak izi tam eşleşmelidir. Diğer sürümlerde bağdaştırıcı kapanır ve nedeni kaydedilir. Başarılı derleme cihaz uyumluluğunu kanıtlamaz.
+**Deneysel alfa; cihaz doğrulaması tamamlanmadı.** Android 15+ (API 35+) Pixel cihazları hedeflenmektedir, ancak **şu anda yalnızca Android 17 üzerinde test edilmiştir** (Pixel 10a, API 37, `CP2A.260805.005`, Pixel Launcher 17). Bağdaştırıcı Android 15 ve 16 sürümlerinde yüklenmeyi deneyecektir, ancak güncellemeler dahili hook'ları bozabilir. Başarılı bir derleme, uyumluluğun kanıtı değildir.
 
 <a id="installation"></a>
 

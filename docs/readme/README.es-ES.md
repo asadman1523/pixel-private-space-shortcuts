@@ -26,7 +26,7 @@ Los accesos bloqueados conservan sus colores y el candado nativo. La página inf
 
 ## Compatibilidad
 
-**Alfa experimental; verificación en dispositivo incompleta.** Destino: Pixel 10a, Android 17 / API 37, `CP2A.260805.005`, Pixel Launcher 17 (`907`), Magisk y LSPosed 2.2.0 (7854). Exige la huella APK exacta del [registro](../TESTING.md). Otras versiones desactivan el adaptador y registran el motivo. Compilar correctamente no demuestra compatibilidad real.
+**Alfa experimental; verificación en dispositivo incompleta.** Orientado a dispositivos Pixel con Android 15+ (API 35+), pero **actualmente solo probado en Android 17** (Pixel 10a, API 37, `CP2A.260805.005`, Pixel Launcher 17). El adaptador intentará cargarse en Android 15 y 16, pero las actualizaciones pueden romper los hooks internos. Una compilación exitosa no es prueba de compatibilidad.
 
 <a id="installation"></a>
 

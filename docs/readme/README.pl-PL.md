@@ -26,7 +26,7 @@ Zablokowane skróty zachowują oryginalne kolory i natywną kłódkę. Strona in
 
 ## Zgodność
 
-**Eksperymentalna alfa; weryfikacja urządzenia niepełna.** Pixel 10a, Android 17 / API 37, `CP2A.260805.005`, Pixel Launcher 17 (`907`), Magisk i LSPosed 2.2.0 (7854). Wymagany dokładny odcisk APK z [raportu](../TESTING.md). Inne wersje wyłączają adapter i zapisują przyczynę. Udana kompilacja nie dowodzi zgodności.
+**Eksperymentalna alfa; weryfikacja urządzenia niepełna.** Projekt skierowany na urządzenia Pixel z systemem Android 15+ (API 35+), ale **obecnie przetestowany tylko na systemie Android 17** (Pixel 10a, API 37, `CP2A.260805.005`, Pixel Launcher 17). Adapter spróbuje załadować się w systemach Android 15 i 16, ale aktualizacje mogą uszkodzić wewnętrzne hooki. Udana kompilacja nie jest dowodem zgodności.
 
 <a id="installation"></a>
 

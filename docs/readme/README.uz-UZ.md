@@ -26,7 +26,7 @@ Qulflangan yorliqlar asl rang va qulf nishonini saqlaydi. Ma’lumot sahifasi do
 
 ## Moslik
 
-**Tajribaviy alfa; qurilma tekshiruvi tugallanmagan.** Pixel 10a, Android 17 / API 37, `CP2A.260805.005`, Pixel Launcher 17 (`907`), Magisk, LSPosed 2.2.0 (7854). APK izi [qaydnoma](../TESTING.md) bilan aniq mos bo‘lishi shart. Boshqa versiyalarda adapter o‘chadi va sabab yoziladi. Muvaffaqiyatli yig‘ish qurilma mosligini isbotlamaydi.
+**Tajribaviy alfa; qurilma tekshiruvi tugallanmagan.** Android 15+ (API 35+) Pixel qurilmalariga mo‘ljallangan, biroq **hozirda faqat Android 17 da sinovdan o‘tgan** (Pixel 10a, API 37, `CP2A.260805.005`, Pixel Launcher 17). Adapter Android 15 va 16 da yuklanishga harakat qiladi, biroq yangilanishlar ichki hook’larni buzishi mumkin. Muvaffaqiyatli yig‘ish moslikni isbotlamaydi.
 
 <a id="installation"></a>
 

@@ -26,7 +26,7 @@ Lối tắt bị khóa giữ màu gốc và dấu khóa gốc. Trang thông tin 
 
 ## Tương thích
 
-**Bản alpha thử nghiệm; kiểm chứng thiết bị chưa hoàn tất.** Pixel 10a, Android 17 / API 37, `CP2A.260805.005`, Pixel Launcher 17 (`907`), Magisk, LSPosed 2.2.0 (7854). Phải khớp chính xác dấu vân tay APK trong [biên bản](../TESTING.md). Phiên bản khác sẽ tắt bộ thích ứng và ghi lý do. Biên dịch thành công không chứng minh tương thích.
+**Bản alpha thử nghiệm; kiểm chứng thiết bị chưa hoàn tất.** Nhắm đến các thiết bị Pixel chạy Android 15+ (API 35+), nhưng **hiện chỉ được thử nghiệm trên Android 17** (Pixel 10a, API 37, `CP2A.260805.005`, Pixel Launcher 17). Bộ thích ứng sẽ cố gắng tải trên Android 15 và 16, nhưng các bản cập nhật có thể làm hỏng các hook nội bộ. Biên dịch thành công không chứng minh tương thích.
 
 <a id="installation"></a>
 

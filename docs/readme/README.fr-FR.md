@@ -26,7 +26,7 @@ Les raccourcis verrouillés gardent leurs couleurs et leur cadenas natif. La pag
 
 ## Compatibilité
 
-**Version alpha expérimentale : vérification sur appareil incomplète.** Cible : Pixel 10a, Android 17 / API 37, `CP2A.260805.005`, Pixel Launcher 17 (`907`), Magisk et LSPosed 2.2.0 (7854). L’empreinte APK doit correspondre exactement au [rapport](../TESTING.md). Sinon, l’adaptateur se désactive et consigne la raison. Une compilation réussie ne prouve pas la compatibilité.
+**Version alpha expérimentale : vérification sur appareil incomplète.** Cible les appareils Pixel sous Android 15+ (API 35+), mais **actuellement testé uniquement sur Android 17** (Pixel 10a, API 37, `CP2A.260805.005`, Pixel Launcher 17). L’adaptateur tentera de se charger sur Android 15 et 16, mais les mises à jour peuvent casser les hooks internes. Une compilation réussie ne prouve pas la compatibilité.
 
 <a id="installation"></a>
 

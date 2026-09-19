@@ -26,7 +26,7 @@ Pintasan terkunci mempertahankan warna dan lencana gembok asli. Halaman informas
 
 ## Kompatibilitas
 
-**Alfa eksperimental; verifikasi perangkat belum lengkap.** Pixel 10a, Android 17 / API 37, `CP2A.260805.005`, Pixel Launcher 17 (`907`), Magisk, LSPosed 2.2.0 (7854). Sidik APK harus persis sesuai [catatan](../TESTING.md). Versi lain menonaktifkan adaptor dan mencatat alasannya. Build berhasil bukan bukti kompatibilitas.
+**Alfa eksperimental; verifikasi perangkat belum lengkap.** Menargetkan perangkat Pixel Android 15+ (API 35+), tetapi **saat ini hanya diuji pada Android 17** (Pixel 10a, API 37, `CP2A.260805.005`, Pixel Launcher 17). Adaptor akan mencoba memuat pada Android 15 dan 16, tetapi pembaruan dapat merusak hook internal. Build berhasil bukan bukti kompatibilitas.
 
 <a id="installation"></a>
 

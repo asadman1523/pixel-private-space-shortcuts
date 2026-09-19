@@ -26,7 +26,7 @@ Read this in other languages: [English](../../README.md), [简体中文](README.
 
 ## 互換性
 
-**実験的アルファ版。実機検証は未完了です。** 対象：Pixel 10a、Android 17 / API 37、`CP2A.260805.005`、Pixel Launcher 17（`907`）、Magisk、LSPosed 2.2.0（7854）。[検証記録](../TESTING.md)の APK 指紋との完全一致が必要です。別のバージョンではアダプターを無効にし、理由を記録します。ビルド成功は実機互換性の証明ではありません。
+**実験的アルファ版。実機検証は未完了です。** Android 15+（API 35+）の Pixel 端末を対象としていますが、**現在は Android 17 でのみテストされています**（Pixel 10a、API 37、`CP2A.260805.005`、Pixel Launcher 17）。アダプターは Android 15 および 16 でも読み込みを試みますが、アップデートによって内部フックが破損する可能性があります。ビルド成功は互換性の証明ではありません。
 
 <a id="installation"></a>
 

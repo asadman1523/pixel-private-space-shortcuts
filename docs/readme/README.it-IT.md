@@ -26,7 +26,7 @@ I collegamenti bloccati conservano colori e lucchetto nativi. La pagina informat
 
 ## Compatibilità
 
-**Alfa sperimentale: verifica sul dispositivo incompleta.** Pixel 10a, Android 17 / API 37, `CP2A.260805.005`, Pixel Launcher 17 (`907`), Magisk e LSPosed 2.2.0 (7854). Serve l’esatta impronta APK del [registro](../TESTING.md). Altre versioni disabilitano l’adattatore e registrano il motivo. Una compilazione riuscita non dimostra compatibilità.
+**Alfa sperimentale: verifica sul dispositivo incompleta.** Destinato ai dispositivi Pixel con Android 15+ (API 35+), ma **attualmente testato solo su Android 17** (Pixel 10a, API 37, `CP2A.260805.005`, Pixel Launcher 17). L’adattatore tenterà di caricarsi su Android 15 e 16, ma gli aggiornamenti potrebbero compromettere gli hook interni. Una compilazione riuscita non dimostra compatibilità.
 
 <a id="installation"></a>
 

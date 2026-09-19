@@ -26,7 +26,7 @@ Os atalhos bloqueados mantêm as cores e o cadeado nativo. A página informativa
 
 ## Compatibilidade
 
-**Alfa experimental; verificação no aparelho incompleta.** Pixel 10a, Android 17 / API 37, `CP2A.260805.005`, Pixel Launcher 17 (`907`), Magisk e LSPosed 2.2.0 (7854). Exige a impressão digital APK exata do [registro](../TESTING.md). Outras versões desativam o adaptador e registram o motivo. Compilar não comprova compatibilidade.
+**Alfa experimental; verificação no aparelho incompleta.** Destinado a dispositivos Pixel com Android 15+ (API 35+), mas **atualmente testado apenas no Android 17** (Pixel 10a, API 37, `CP2A.260805.005`, Pixel Launcher 17). O adaptador tentará carregar no Android 15 e 16, mas atualizações podem quebrar hooks internos. Uma compilação bem-sucedida não é prova de compatibilidade.
 
 <a id="installation"></a>
 

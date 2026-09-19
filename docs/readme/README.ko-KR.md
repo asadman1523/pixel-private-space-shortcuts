@@ -26,7 +26,7 @@ Read this in other languages: [English](../../README.md), [简体中文](README.
 
 ## 호환성
 
-**실험용 알파 버전이며 실기기 검증은 미완료입니다.** 대상: Pixel 10a, Android 17 / API 37, `CP2A.260805.005`, Pixel Launcher 17 (`907`), Magisk, LSPosed 2.2.0 (7854). [검증 기록](../TESTING.md)의 APK 지문과 정확히 일치해야 합니다. 다른 버전에서는 어댑터를 끄고 이유를 기록합니다. 빌드 성공이 기기 호환성을 보증하지는 않습니다.
+**실험용 알파 버전이며 실기기 검증은 미완료입니다.** Android 15+(API 35+) Pixel 기기를 대상으로 하지만, **현재는 Android 17에서만 테스트되었습니다**(Pixel 10a, API 37, `CP2A.260805.005`, Pixel Launcher 17). 어댑터는 Android 15 및 16에서 로드를 시도하지만, 업데이트로 인해 내부 훅이 깨질 수 있습니다. 빌드 성공이 호환성을 보증하지는 않습니다.
 
 <a id="installation"></a>
 
