@@ -64,3 +64,5 @@ python3 -X utf8 tools/check_docs.py
 ## רישיון
 
 [Apache-2.0](../../LICENSE). ללא קשר ל־Google או ל־LSPosed. אין הפצת APK של Google, קבצים שעברו פירוק, יומני מכשיר, פרטי אימות או מפתחות. ראו [ארכיטקטורה](../ARCHITECTURE.md) ו[בדיקות](../TESTING.md).
+
+[מדיניות פרטיות (באנגלית)](../../PRIVACY.md)

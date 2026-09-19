@@ -64,3 +64,5 @@ python3 -X utf8 tools/check_docs.py
 ## Lisans
 
 [Apache-2.0](../../LICENSE). Google veya LSPosed ile bağlantılı değildir. Google APK’leri, tersine derlenen dosyalar, cihaz günlükleri, kimlik bilgileri ve anahtarlar dağıtılmaz. [Mimari](../ARCHITECTURE.md) ve [test kayıtlarına](../TESTING.md) bakın.
+
+[Gizlilik politikası (İngilizce)](../../PRIVACY.md)

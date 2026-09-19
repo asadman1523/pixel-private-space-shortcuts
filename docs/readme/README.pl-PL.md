@@ -64,3 +64,5 @@ Usuń zbędne skróty w Launcherze, wyłącz moduł w LSPosed i uruchom Launcher
 ## Licencja
 
 [Apache-2.0](../../LICENSE). Brak powiązań z Google i LSPosed. Bez dystrybucji APK Google, zdekompilowanych plików, dzienników urządzenia, danych logowania ani kluczy. Zobacz [architekturę](../ARCHITECTURE.md) i [raport](../TESTING.md).
+
+[Polityka prywatności (po angielsku)](../../PRIVACY.md)

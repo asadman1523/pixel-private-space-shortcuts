@@ -64,3 +64,5 @@ python3 -X utf8 tools/check_docs.py
 ## الترخيص
 
 [Apache-2.0](../../LICENSE). لا ارتباط بـGoogle أو LSPosed. لا نوزع APK الخاص بـGoogle أو الملفات المفككة أو سجلات الجهاز أو بيانات الاعتماد أو المفاتيح. راجع [البنية](../ARCHITECTURE.md) و[سجل التحقق](../TESTING.md).
+
+[سياسة الخصوصية (بالإنجليزية)](../../PRIVACY.md)

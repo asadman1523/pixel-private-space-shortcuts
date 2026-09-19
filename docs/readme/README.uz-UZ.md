@@ -64,3 +64,5 @@ Keraksiz yorliqlarni Launcher orqali o‘chiring, modulni LSPosed’da o‘chiri
 ## Litsenziya
 
 [Apache-2.0](../../LICENSE). Google yoki LSPosed bilan bog‘liq emas. Google APK fayllari, dekompilyatsiya fayllari, qurilma jurnallari, hisob ma’lumotlari va kalitlar tarqatilmaydi. [Arxitektura](../ARCHITECTURE.md) va [tekshiruvlar](../TESTING.md) bilan tanishing.
+
+[Maxfiylik siyosati (ingliz tilida)](../../PRIVACY.md)
