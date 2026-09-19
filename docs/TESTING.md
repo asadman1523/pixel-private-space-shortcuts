@@ -22,6 +22,7 @@ The APK was inspected locally. The APK, decompiled sources, raw logs, serial num
 - 11 `LaunchGate` unit tests pass: one-shot completion, cancellation, unsolicited broadcasts, premature return, delayed readiness, wrong-profile events, repeated taps, expiry, explicit cancellation, relocking, no-prompt approval and old timer isolation (some tests cover multiple cases).
 - All 19 README files and local documentation links are checked by `tools/check_docs.py`.
 - The Build badge reports the real GitHub main-branch workflow; it is not a static success claim.
+- GitHub Actions [run 35464207868](https://github.com/asadman1523/pixel-private-space-shortcuts/actions/runs/35464207868) passed the build, unit tests, lint and documentation checks on Linux. The earlier SDK-setup failure was fixed by pinning current command-line tools and omitting the obsolete `tools` package.
 
 ## Device acceptance matrix
 
