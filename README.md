@@ -2,9 +2,9 @@
 
 Native Home screen shortcuts for Pixel Private Space apps, powered by LSPosed.
 
-[![Build](https://img.shields.io/github/actions/workflow/status/asadman1523/pixel-private-space-shortcuts/build.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/actions/workflows/build.yml)
-[![Android](https://img.shields.io/badge/Android-17%20%2F%20API%2037%20experimental-orange?style=for-the-badge&logo=android&logoColor=white)](#compatibility)
-[![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=for-the-badge&logo=apache&logoColor=white)](LICENSE)
+[![Build](https://img.shields.io/github/actions/workflow/status/asadman1523/pixel-private-space-shortcuts/build.yml?branch=main&style=flat&logo=githubactions&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/actions/workflows/build.yml)
+[![Android](https://img.shields.io/badge/Android-17%20%2F%20API%2037%20experimental-orange?style=flat&logo=android&logoColor=white)](#compatibility)
+[![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=flat&logo=apache&logoColor=white)](LICENSE)
 
 Read this in other languages: **English**, [简体中文](docs/readme/README.zh-CN.md), [繁體中文](docs/readme/README.zh-TW.md), [한국어](docs/readme/README.ko-KR.md), [日本語](docs/readme/README.ja-JP.md), [Polski](docs/readme/README.pl-PL.md), [Français](docs/readme/README.fr-FR.md), [Español](docs/readme/README.es-ES.md), [Português](docs/readme/README.pt-BR.md), [Русский](docs/readme/README.ru-RU.md), [Türkçe](docs/readme/README.tr-TR.md), [Italiano](docs/readme/README.it-IT.md), [Bahasa Indonesia](docs/readme/README.id-ID.md), [Українська](docs/readme/README.uk-UA.md), [العربية](docs/readme/README.ar-AR.md), [Tiếng Việt](docs/readme/README.vi-VN.md), [Deutsch](docs/readme/README.de-DE.md), [Uzbek](docs/readme/README.uz-UZ.md), [עברית](docs/readme/README.he-IL.md)
 

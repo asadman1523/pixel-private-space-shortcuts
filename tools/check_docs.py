@@ -35,7 +35,7 @@ for code, name in LANGUAGES.items():
     sections = ['features', 'compatibility', 'installation', 'usage', 'build', 'disable', 'license']
     assert all(section in anchors(content) for section in sections), path.name
     assert content.index('# Pixel Private Space Shortcuts') < content.index('[![Build]') < content.index(nav) < content.index('<a id="features">'), path.name
-    assert 'branch=main&style=for-the-badge' in content, path.name
+    assert 'branch=main&style=flat' in content, path.name
     assert '/actions/workflows/build.yml' in content, path.name
     assert 'build-passing' not in content.lower(), path.name
 
