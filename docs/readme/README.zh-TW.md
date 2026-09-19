@@ -28,7 +28,7 @@ Read this in other languages: [English](../../README.md), [简体中文](README.
 
 ## 相容性
 
-**實驗性測試版，實機驗證尚未完成。** 目標為 Pixel 10a、Android 17／API 37、組建 `CP2A.260805.005`、Pixel Launcher 17（`907`）、Magisk 與 LSPosed 2.2.0（7854）。Hook 必須符合[驗證紀錄](../TESTING.md)中的 APK 指紋；其他版本停用適配器並記錄原因。建置成功不代表實機相容。
+**實驗性測試版，實機驗證尚未完成。** 目標為支援 Android 15+ (API 35+) 的 Pixel 裝置，但**目前僅在 Android 17 上進行過測試**（Pixel 10a、API 37、組建 `CP2A.260805.005`、Pixel Launcher 17）。模組會嘗試在 Android 15 與 16 上載入，但啟動器的更新可能會導致 Hook 失效。建置成功不代表實機一定相容。
 
 <a id="installation"></a>
 
