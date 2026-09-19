@@ -64,3 +64,5 @@ Rimuovi i collegamenti indesiderati dal Launcher, disabilita il modulo in LSPose
 ## Licenza
 
 [Apache-2.0](../../LICENSE). Nessuna affiliazione con Google o LSPosed. Non distribuiamo APK Google, file decompilati, registri del dispositivo, credenziali o chiavi. Vedi [architettura](../ARCHITECTURE.md) e [verifiche](../TESTING.md).
+
+[Informativa sulla privacy (in inglese)](../../PRIVACY_POLICY.md)

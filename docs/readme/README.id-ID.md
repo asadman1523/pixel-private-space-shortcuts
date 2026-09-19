@@ -64,3 +64,5 @@ Hapus pintasan yang tidak diperlukan melalui Launcher, nonaktifkan modul di LSPo
 ## Lisensi
 
 [Apache-2.0](../../LICENSE). Tidak berafiliasi dengan Google atau LSPosed. Tidak menyebarkan APK Google, berkas dekompilasi, log perangkat, kredensial, atau kunci. Lihat [arsitektur](../ARCHITECTURE.md) dan [verifikasi](../TESTING.md).
+
+[Kebijakan privasi (bahasa Inggris)](../../PRIVACY_POLICY.md)

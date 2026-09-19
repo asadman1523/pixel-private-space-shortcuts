@@ -64,3 +64,5 @@ python3 -X utf8 tools/check_docs.py
 ## ライセンス
 
 [Apache-2.0](../../LICENSE)。Google、LSPosed とは無関係です。Launcher APK、逆コンパイルしたファイル、端末ログ、認証情報、署名鍵は配布しません。[実装](../ARCHITECTURE.md)と[検証記録](../TESTING.md)も参照してください。
+
+[プライバシーポリシー（英語）](../../PRIVACY_POLICY.md)

@@ -64,3 +64,5 @@ Elimina los accesos que no quieras desde el Launcher, desactiva el módulo en LS
 ## Licencia
 
 [Apache-2.0](../../LICENSE). Sin afiliación con Google ni LSPosed. No se distribuyen APK de Google, archivos descompilados, registros del dispositivo, credenciales ni claves. Consulta la [arquitectura](../ARCHITECTURE.md) y las [verificaciones](../TESTING.md).
+
+[Política de privacidad (en inglés)](../../PRIVACY_POLICY.md)

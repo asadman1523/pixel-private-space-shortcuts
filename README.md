@@ -66,3 +66,5 @@ Remove unwanted shortcuts through Launcher, disable the module in LSPosed, and r
 ## License
 
 [Apache-2.0](LICENSE). Unaffiliated with Google or LSPosed. Google’s Launcher APK, decompiled files, device logs, credentials and signing keys are not distributed. See [implementation notes](docs/ARCHITECTURE.md) and the [verification record](docs/TESTING.md).
+
+[Privacy policy (English)](PRIVACY_POLICY.md)

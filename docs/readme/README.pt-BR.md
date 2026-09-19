@@ -64,3 +64,5 @@ Remova atalhos indesejados pelo Launcher, desative o módulo no LSPosed e reinic
 ## Licença
 
 [Apache-2.0](../../LICENSE). Sem vínculo com Google ou LSPosed. Não distribuímos APKs do Google, arquivos descompilados, registros do aparelho, credenciais ou chaves. Veja a [arquitetura](../ARCHITECTURE.md) e os [testes](../TESTING.md).
+
+[Política de privacidade (em inglês)](../../PRIVACY_POLICY.md)

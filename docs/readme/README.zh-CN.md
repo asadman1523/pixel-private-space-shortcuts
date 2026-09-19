@@ -66,3 +66,5 @@ python3 -X utf8 tools/check_docs.py
 ## 许可
 
 [Apache-2.0](../../LICENSE)。与 Google 或 LSPosed 无隶属关系。不发布 Google Launcher APK、反编译文件、设备日志、凭据或签名密钥。参见[实现说明](../ARCHITECTURE.md)和[验证记录](../TESTING.md)。
+
+[隐私政策（英文）](../../PRIVACY_POLICY.md)

@@ -64,3 +64,5 @@ Launcher에서 불필요한 바로가기를 지우고 LSPosed에서 모듈을 �
 ## 라이선스
 
 [Apache-2.0](../../LICENSE). Google 및 LSPosed와 제휴하지 않습니다. Launcher APK, 역컴파일 파일, 기기 로그, 인증 정보, 서명 키를 배포하지 않습니다. [구현 설명](../ARCHITECTURE.md)과 [검증 기록](../TESTING.md)을 참고하세요.
+
+[개인정보 처리방침 (영문)](../../PRIVACY_POLICY.md)

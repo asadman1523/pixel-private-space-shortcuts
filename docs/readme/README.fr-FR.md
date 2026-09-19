@@ -64,3 +64,5 @@ Supprimez les raccourcis inutiles dans le Launcher, désactivez le module dans L
 ## Licence
 
 [Apache-2.0](../../LICENSE). Sans affiliation avec Google ou LSPosed. Aucun APK Google, fichier décompilé, journal d’appareil, identifiant secret ni clé de signature n’est distribué. Voir les [notes techniques](../ARCHITECTURE.md) et le [rapport de vérification](../TESTING.md).
+
+[Politique de confidentialité (en anglais)](../../PRIVACY_POLICY.md)

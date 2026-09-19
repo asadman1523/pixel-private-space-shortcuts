@@ -64,3 +64,5 @@ Unerwünschte Verknüpfungen im Launcher entfernen, Modul in LSPosed deaktiviere
 ## Lizenz
 
 [Apache-2.0](../../LICENSE). Keine Verbindung zu Google oder LSPosed. Keine Verteilung von Google-APKs, dekompilierten Dateien, Geräteprotokollen, Zugangsdaten oder Schlüsseln. Siehe [Architektur](../ARCHITECTURE.md) und [Prüfprotokoll](../TESTING.md).
+
+[Datenschutzerklärung (Englisch)](../../PRIVACY_POLICY.md)

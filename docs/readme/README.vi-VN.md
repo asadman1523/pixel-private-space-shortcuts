@@ -64,3 +64,5 @@ Xóa lối tắt không cần qua Launcher, tắt mô-đun trong LSPosed và kh�
 ## Giấy phép
 
 [Apache-2.0](../../LICENSE). Không liên kết với Google hoặc LSPosed. Không phát hành APK Google, tệp dịch ngược, nhật ký thiết bị, thông tin xác thực hay khóa. Xem [kiến trúc](../ARCHITECTURE.md) và [kiểm chứng](../TESTING.md).
+
+[Chính sách quyền riêng tư (tiếng Anh)](../../PRIVACY_POLICY.md)
