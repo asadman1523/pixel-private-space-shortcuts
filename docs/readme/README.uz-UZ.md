@@ -16,7 +16,7 @@ Namoyish qurilmada tekshirilgandan keyin yoziladi. Taqlid haqiqiy sinov natijasi
 
 ## Imkoniyatlar
 
-Qulfi ochiq Maxfiy makondagi ilovani bosib turing va **Bosh ekranga qo‘shish** ni tanlang. Modul Pixel Launcher joylashtirishi, ma’lumotlar bazasi, belgilar va qulf nishonidan foydalanadi. Profil seriya raqami hamda ishga tushirish komponenti manzilni aniqlaydi va takrorlanishni oldini oladi. Ko‘chirish, jildlar va olib tashlash qo‘llanadi.
+Qulfi ochiq Maxfiy makondagi ilovani bosib turing va **Bosh ekranga qo‘shish** ni tanlang yoki uni to‘g‘ridan-to‘g‘ri bosh ekranga sudrab olib o‘ting. Bu Barcha ilovalar yuqorisidagi takliflar qatorida ko‘rsatilgan maxfiy ilovalar uchun ham ishlaydi. Modul Pixel Launcher joylashtirishi, ma’lumotlar bazasi, belgilar va qulf nishonidan foydalanadi. Profil seriya raqami hamda ishga tushirish komponenti manzilni aniqlaydi va takrorlanishni oldini oladi. Ko‘chirish, jildlar va olib tashlash qo‘llanadi.
 
 Qulflanganda yorliq joyini saqlashi va bosilganda tizim tasdiqlashini so‘rashi ko‘zda tutilgan. Qulf ochiq bo‘lsa, aynan maxfiy nusxa ochiladi. So‘rov bir marta bajariladi; bekor qilish, vaqt tugashi yoki Launcher yo‘q qilinishi uni tozalaydi. Asosiy profil nusxasiga o‘tilmaydi. Faqat modul yaratgan elementlar o‘zgaradi; vidjetlar va ilova ichki yorliqlari kiritilmagan. Qulf paytida ham ilova nomi va belgisi ko‘rinadi.
 
@@ -40,7 +40,7 @@ Sahifada **LSPosed’ni ochish** tugmasi bor. Alohida menejer bevosita ochiladi;
 
 ## Foydalanish
 
-Maxfiy makon qulfini oching, ilovani bosib turing va bosh ekranga qo‘shing. Belgi aynan maxfiy nusxani ochadi; kerak bo‘lsa Android orqali tasdiqlang. Bekor qilish so‘rovni tashlaydi. Belgini bosib turib ko‘chiring, jildga joylang yoki o‘chiring. Qayta qo‘shish mavjud yorliq haqida xabar beradi. Modul ma’lumot ilovasini Maxfiy makonga maxfiy ma’lumotsiz sinov uchun o‘rnatish mumkin.
+Maxfiy makon qulfini oching, ilovani bosib turing va **Bosh ekranga qo‘shish** ni tanlang yoki uni bosh ekranga sudrab olib o‘ting. Takliflar qatoridagi maxfiy ilovalarni ham shu tarzda qo‘shish mumkin. Belgi aynan maxfiy nusxani ochadi; kerak bo‘lsa Android orqali tasdiqlang. Bekor qilish so‘rovni tashlaydi. Belgini bosib turib ko‘chiring, jildga joylang yoki o‘chiring. Qayta qo‘shish mavjud yorliq haqida xabar beradi. Modul ma’lumot ilovasini Maxfiy makonga maxfiy ma’lumotsiz sinov uchun o‘rnatish mumkin.
 
 <a id="build"></a>
 

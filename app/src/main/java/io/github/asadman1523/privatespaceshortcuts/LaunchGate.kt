@@ -14,7 +14,11 @@ class LaunchGate(private val now: () -> Long, private val ttlMillis: Long = 120_
         request = Request(target, now())
         return true
     }
-    fun departed() { expire(); request?.departed = true }
+    fun departed() {
+        expire()
+        if (request?.returned == true) cancel() else request?.departed = true
+    }
+    fun interacted() { expire(); if (request?.returned == true) cancel() }
     fun approvedWithoutPrompt(unlocked: Boolean): TargetKey? {
         expire()
         val r = request ?: return null

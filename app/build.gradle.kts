@@ -5,10 +5,10 @@ android {
     compileSdk = 37
     defaultConfig {
         applicationId = "io.github.asadman1523.privatespaceshortcuts"
-        minSdk = 37
+        minSdk = 35
         targetSdk = 37
-        versionCode = 2
-        versionName = "0.1.0-alpha.2"
+        versionCode = 3
+        versionName = "0.1.0-alpha.3"
     }
     buildFeatures { buildConfig = true }
     compileOptions {

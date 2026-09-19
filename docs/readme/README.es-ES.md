@@ -16,7 +16,7 @@ La demostración se grabará tras verificar el dispositivo; no se presentará un
 
 ## Funciones
 
-Mantén pulsada una app del Espacio privado desbloqueado y elige **Añadir a la pantalla de inicio**. Se reutilizan la distribución, base de datos, iconos y candado de Pixel Launcher. El número de serie del perfil y el componente de inicio identifican el destino y evitan duplicados. Permite mover, agrupar en carpetas y eliminar.
+Mantén pulsada una app del Espacio privado desbloqueado y elige **Añadir a la pantalla de inicio**, o arrástrala directamente a la pantalla de inicio. Esto también funciona para las apps privadas mostradas en la fila de sugerencias en la parte superior de Todas las aplicaciones. Se reutilizan la distribución, base de datos, iconos y candado de Pixel Launcher. El número de serie del perfil y el componente de inicio identifican el destino y evitan duplicados. Permite mover, agrupar en carpetas y eliminar.
 
 Cuando está bloqueado, el acceso está diseñado para conservar su posición y pedir autenticación del sistema. Desbloqueado, abre directamente la copia privada. Cada solicitud se ejecuta una sola vez y se borra al cancelar, caducar o destruirse el Launcher. Nunca abre la copia principal como alternativa. Solo modifica elementos del módulo; no incluye widgets ni accesos internos. El nombre y el icono siguen visibles con el Espacio privado bloqueado.
 
@@ -40,7 +40,7 @@ La página incluye **Abrir LSPosed**. El gestor independiente se abre directamen
 
 ## Uso
 
-Desbloquea el Espacio privado, mantén pulsada una app y añádela al inicio. Toca su icono para abrir la misma copia privada y autentícate en Android si hace falta. Cancelar descarta la solicitud. Mantén pulsado el icono para moverlo, colocarlo en una carpeta o eliminarlo. Un segundo intento de añadirlo avisa que ya existe. La app informativa del módulo puede instalarse también en el Espacio privado como prueba sin datos sensibles.
+Desbloquea el Espacio privado, mantén pulsada una app y añádela al inicio, o arrástrala a la pantalla de inicio. Las apps privadas de la fila de sugerencias también se pueden añadir de la misma forma. Toca su icono para abrir la misma copia privada y autentícate en Android si hace falta. Cancelar descarta la solicitud. Mantén pulsado el icono para moverlo, colocarlo en una carpeta o eliminarlo. Un segundo intento de añadirlo avisa que ya existe. La app informativa del módulo puede instalarse también en el Espacio privado como prueba sin datos sensibles.
 
 <a id="build"></a>
 

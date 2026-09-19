@@ -58,9 +58,6 @@ class MainActivity : Activity() {
         managerButton = action(t("開啟 LSPosed", "Open LSPosed"), false) { openLsposed(managerButton) }
         setup.addView(managerButton, spaced(12))
         setup.addView(step("2", t("選擇 Pixel Launcher", "Select Pixel Launcher"), t("作用域只勾選 Pixel Launcher，然後重新啟動桌面。", "Scope only Pixel Launcher, then restart the launcher.")), spaced(22))
-        setup.addView(action(t("複製套件名稱", "Copy package name"), false) {
-            getSystemService(ClipboardManager::class.java).setPrimaryClip(ClipData.newPlainText("Pixel Launcher", Native907.PACKAGE))
-        }, spaced(12))
         setup.addView(step("3", t("新增至主畫面", "Add to Home screen"), t("解鎖私人空間 → 長按 App → 新增至主畫面。", "Unlock Private Space → long-press an app → Add to Home screen.")), spaced(22))
         page.addView(setup, spaced(10))
         page.addView(action(t("在 GitHub 查看專案", "View project on GitHub"), true) {

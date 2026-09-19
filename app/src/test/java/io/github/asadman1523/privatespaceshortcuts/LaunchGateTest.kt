@@ -67,4 +67,25 @@ class LaunchGateTest {
         time = 100
         assertEquals(target, gate.current())
     }
+    @Test fun readinessPollingCompletesWithoutAnotherBroadcast() {
+        gate.begin(target); gate.departed()
+        assertNull(gate.returned(false, false))
+        repeat(5) { time += 5; assertNull(gate.ready(target, false, false)) }
+        assertEquals(target, gate.ready(target, false, true))
+        assertNull(gate.ready(target, false, true))
+    }
+    @Test fun leavingLauncherWhileProfileStartsCancels() {
+        gate.begin(target); gate.departed(); gate.returned(false, false)
+        gate.departed()
+        assertNull(gate.ready(target, false, true))
+    }
+    @Test fun newInteractionAfterReturningCancelsPendingLaunch() {
+        gate.begin(target); gate.departed(); gate.returned(false, false)
+        gate.interacted()
+        assertNull(gate.ready(target, false, true))
+    }
+    @Test fun initiatingTapDoesNotCancelAuthentication() {
+        gate.begin(target); gate.interacted()
+        assertEquals(target, gate.current())
+    }
 }
