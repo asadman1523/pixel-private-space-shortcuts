@@ -48,7 +48,7 @@ class Native907(private val app: Application, private val loader: ClassLoader) {
         appInfoClass = cls("model.data.AppInfo")
         shortcutClass = cls("popup.SystemShortcut")
         launcherClass = cls("Launcher")
-        val populate = method(cls("popup.PopupContainerWithArrow"), "populateAndShowRows", 2)
+        val populate = method(cls("popup.PopupContainerWithArrow"), "populateAndShowRows")
         val shortcutClick = method(cls("popup.SystemShortcut\$Install"), "onClick", 1)
         val click = method(cls("touch.ItemClickHandler\$\$ExternalSyntheticLambda0"), "onClick", 1)
         val addItems = method(cls("model.BgDataModel"), "addItems", 3)
@@ -134,11 +134,14 @@ class Native907(private val app: Application, private val loader: ClassLoader) {
         val factory = XposedHelpers.getStaticObjectField(shortcutClass, "ADD_TO_HOME_SCREEN")
         val native = call(factory, "getShortcut", target, copy, view) ?: return
         @Suppress("UNCHECKED_CAST")
-        val rows = (p.args[1] as List<Any>).toMutableList()
+        // Android 15 & 16: populateAndShowRows(BubbleTextView, int, List) -> list is args[2]
+        // Android 17: populateAndShowRows(int, List) -> list is args[1]
+        val listIndex = if (p.args.size == 3) 2 else 1
+        val rows = (p.args[listIndex] as List<Any>).toMutableList()
         if (rows.none { it in addActions && ownedKey(field(it, "mItemInfo")) == key }) {
             addActions.add(native)
             rows.add(native)
-            p.args[1] = rows
+            p.args[listIndex] = rows
         }
     }
 
@@ -301,8 +304,8 @@ class Native907(private val app: Application, private val loader: ClassLoader) {
     }
 
     private fun cls(relative: String): Class<*> = XposedHelpers.findClass("com.android.launcher3.$relative", loader)
-    private fun method(type: Class<*>, name: String, count: Int): Method =
-        type.declaredMethods.single { it.name == name && it.parameterCount == count }
+    private fun method(type: Class<*>, name: String, count: Int? = null): Method =
+        type.declaredMethods.single { it.name == name && (count == null || it.parameterCount == count) }
     private fun field(target: Any?, name: String): Any? = target?.let { XposedHelpers.getObjectField(it, name) }
     private fun call(target: Any, name: String, vararg args: Any?): Any? = XposedHelpers.callMethod(target, name, *args)
     private fun guarded(action: () -> Unit) {
