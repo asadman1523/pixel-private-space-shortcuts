@@ -27,4 +27,4 @@ Run `./gradlew testReleaseUnitTest lintRelease assembleRelease`. Without these v
 
 `build.yml` checks documentation, unit tests, lint and a debug APK on both `main` and feature branches. The README Build badge reads the actual main-branch result. Release and cumulative-download badges are added only after an APK release exists. Alpha releases remain prereleases while the [acceptance matrix](TESTING.md) has unverified rows. A green CI badge certifies these automated checks, not all device behavior.
 
-English README content is the baseline. Update all 18 translations with it, keep all 19 language links expanded, and run the documentation checker before publishing.
+The root English `README.md` is the baseline and GitHub homepage. All 18 translations live together under `docs/readme/`. Update them together, keep all 19 language links expanded, and run the documentation checker before publishing.

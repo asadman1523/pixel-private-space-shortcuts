@@ -4,9 +4,9 @@
 
 [![Build](https://img.shields.io/github/actions/workflow/status/asadman1523/pixel-private-space-shortcuts/build.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/actions/workflows/build.yml)
 [![Android](https://img.shields.io/badge/Android-17%20%2F%20API%2037%20experimental-orange?style=for-the-badge&logo=android&logoColor=white)](#compatibility)
-[![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=for-the-badge&logo=apache&logoColor=white)](LICENSE)
+[![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=for-the-badge&logo=apache&logoColor=white)](../../LICENSE)
 
-Read this in other languages: [English](README.md), [简体中文](README.zh-CN.md), [繁體中文](README.zh-TW.md), [한국어](README.ko-KR.md), [日本語](README.ja-JP.md), [Polski](README.pl-PL.md), [Français](README.fr-FR.md), [Español](README.es-ES.md), [Português](README.pt-BR.md), [Русский](README.ru-RU.md), [Türkçe](README.tr-TR.md), [Italiano](README.it-IT.md), [Bahasa Indonesia](README.id-ID.md), [Українська](README.uk-UA.md), [العربية](README.ar-AR.md), [Tiếng Việt](README.vi-VN.md), [Deutsch](README.de-DE.md), [Uzbek](README.uz-UZ.md), **עברית**
+Read this in other languages: [English](../../README.md), [简体中文](README.zh-CN.md), [繁體中文](README.zh-TW.md), [한국어](README.ko-KR.md), [日本語](README.ja-JP.md), [Polski](README.pl-PL.md), [Français](README.fr-FR.md), [Español](README.es-ES.md), [Português](README.pt-BR.md), [Русский](README.ru-RU.md), [Türkçe](README.tr-TR.md), [Italiano](README.it-IT.md), [Bahasa Indonesia](README.id-ID.md), [Українська](README.uk-UA.md), [العربية](README.ar-AR.md), [Tiếng Việt](README.vi-VN.md), [Deutsch](README.de-DE.md), [Uzbek](README.uz-UZ.md), **עברית**
 
 ההדגמה תוקלט לאחר בדיקה במכשיר. הדמיה לא תוצג כתוצאת בדיקה אמיתית.
 
@@ -18,11 +18,13 @@ Read this in other languages: [English](README.md), [简体中文](README.zh-CN.
 
 בעת נעילה קיצור הדרך נועד לשמור על מיקומו ולבקש אימות מערכת בלחיצה. כשהמרחב פתוח, העותק הפרטי נפתח ישירות. הבקשה מתבצעת פעם אחת ונמחקת בביטול, בתום הזמן או בהשמדת Launcher. אין מעבר חלופי לעותק הראשי. רק פריטים שהמודול יצר משתנים; ללא ווידג׳טים או קיצורים פנימיים. שם האפליקציה והסמל גלויים גם בזמן נעילה.
 
+קיצורים נעולים שומרים על הצבעים המקוריים ועל סימון המנעול. דף המידע מתאים למצב הבהיר או הכהה של המערכת בצבעי שחור, לבן ואפור קבועים.
+
 <a id="compatibility"></a>
 
 ## תאימות
 
-**גרסת אלפא ניסיונית; בדיקת המכשיר אינה מלאה.** Pixel 10a, Android 17 / API 37, `CP2A.260805.005`, Pixel Launcher 17 (`907`), Magisk ו־LSPosed 2.2.0 (7854). נדרשת טביעת APK זהה ל[רישום הבדיקות](docs/TESTING.md). גרסאות אחרות משביתות את המתאם ומתעדות את הסיבה. בנייה מוצלחת אינה מוכיחה תאימות.
+**גרסת אלפא ניסיונית; בדיקת המכשיר אינה מלאה.** Pixel 10a, Android 17 / API 37, `CP2A.260805.005`, Pixel Launcher 17 (`907`), Magisk ו־LSPosed 2.2.0 (7854). נדרשת טביעת APK זהה ל[רישום הבדיקות](../TESTING.md). גרסאות אחרות משביתות את המתאם ומתעדות את הסיבה. בנייה מוצלחת אינה מוכיחה תאימות.
 
 <a id="installation"></a>
 
@@ -40,7 +42,7 @@ Read this in other languages: [English](README.md), [简体中文](README.zh-CN.
 
 ## בנייה
 
-השתמשו ב־JDK 17, ב־SDK `platforms;android-37.0`, ב־Build Tools `36.0.0` וב־Gradle wrapper הכלול. הריצו את הפקודות להלן (`gradlew.bat` ב־Windows). CI בונה, בודק מצבי פתיחת נעילה, מריץ Android lint ובודק את כל קובצי README והקישורים המקומיים. ארבעת משתני `PPSS_*` ב[BUILDING](docs/BUILDING.md) מגדירים חתימה; שמרו מפתחות מחוץ למאגר.
+השתמשו ב־JDK 17, ב־SDK `platforms;android-37.0`, ב־Build Tools `36.0.0` וב־Gradle wrapper הכלול. הריצו את הפקודות להלן (`gradlew.bat` ב־Windows). CI בונה, בודק מצבי פתיחת נעילה, מריץ Android lint ובודק את כל קובצי README והקישורים המקומיים. ארבעת משתני `PPSS_*` ב[BUILDING](../BUILDING.md) מגדירים חתימה; שמרו מפתחות מחוץ למאגר.
 
 ```sh
 python3 -X utf8 tools/check_docs.py
@@ -57,4 +59,4 @@ python3 -X utf8 tools/check_docs.py
 
 ## רישיון
 
-[Apache-2.0](LICENSE). ללא קשר ל־Google או ל־LSPosed. אין הפצת APK של Google, קבצים שעברו פירוק, יומני מכשיר, פרטי אימות או מפתחות. ראו [ארכיטקטורה](docs/ARCHITECTURE.md) ו[בדיקות](docs/TESTING.md).
+[Apache-2.0](../../LICENSE). ללא קשר ל־Google או ל־LSPosed. אין הפצת APK של Google, קבצים שעברו פירוק, יומני מכשיר, פרטי אימות או מפתחות. ראו [ארכיטקטורה](../ARCHITECTURE.md) ו[בדיקות](../TESTING.md).

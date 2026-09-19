@@ -6,7 +6,7 @@ Native Home screen shortcuts for Pixel Private Space apps, powered by LSPosed.
 [![Android](https://img.shields.io/badge/Android-17%20%2F%20API%2037%20experimental-orange?style=for-the-badge&logo=android&logoColor=white)](#compatibility)
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=for-the-badge&logo=apache&logoColor=white)](LICENSE)
 
-Read this in other languages: **English**, [简体中文](README.zh-CN.md), [繁體中文](README.zh-TW.md), [한국어](README.ko-KR.md), [日本語](README.ja-JP.md), [Polski](README.pl-PL.md), [Français](README.fr-FR.md), [Español](README.es-ES.md), [Português](README.pt-BR.md), [Русский](README.ru-RU.md), [Türkçe](README.tr-TR.md), [Italiano](README.it-IT.md), [Bahasa Indonesia](README.id-ID.md), [Українська](README.uk-UA.md), [العربية](README.ar-AR.md), [Tiếng Việt](README.vi-VN.md), [Deutsch](README.de-DE.md), [Uzbek](README.uz-UZ.md), [עברית](README.he-IL.md)
+Read this in other languages: **English**, [简体中文](docs/readme/README.zh-CN.md), [繁體中文](docs/readme/README.zh-TW.md), [한국어](docs/readme/README.ko-KR.md), [日本語](docs/readme/README.ja-JP.md), [Polski](docs/readme/README.pl-PL.md), [Français](docs/readme/README.fr-FR.md), [Español](docs/readme/README.es-ES.md), [Português](docs/readme/README.pt-BR.md), [Русский](docs/readme/README.ru-RU.md), [Türkçe](docs/readme/README.tr-TR.md), [Italiano](docs/readme/README.it-IT.md), [Bahasa Indonesia](docs/readme/README.id-ID.md), [Українська](docs/readme/README.uk-UA.md), [العربية](docs/readme/README.ar-AR.md), [Tiếng Việt](docs/readme/README.vi-VN.md), [Deutsch](docs/readme/README.de-DE.md), [Uzbek](docs/readme/README.uz-UZ.md), [עברית](docs/readme/README.he-IL.md)
 
 Demo recording is pending device verification. No simulated demonstration is presented as a device result.
 
@@ -19,6 +19,8 @@ Long-press an app in unlocked Private Space and choose the native **Add to Home 
 When locked, the shortcut is designed to retain its position and request system authentication on tap. An unlocked profile opens directly. Pending launches are consumed once and cleared on cancellation, timeout or Launcher destruction. The owner-profile copy is never a fallback. Only module-created items receive these changes; widgets and app-internal shortcuts are outside this release.
 
 Home screen icons intentionally expose the app’s name and icon even while Private Space is locked.
+
+Locked shortcuts retain their original colors and native lock badge. The information page follows system light/dark mode with a fixed black, white and gray palette.
 
 <a id="compatibility"></a>
 

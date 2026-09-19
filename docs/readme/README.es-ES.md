@@ -4,9 +4,9 @@ Accesos directos nativos en la pantalla de inicio para las apps del Espacio priv
 
 [![Build](https://img.shields.io/github/actions/workflow/status/asadman1523/pixel-private-space-shortcuts/build.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/actions/workflows/build.yml)
 [![Android](https://img.shields.io/badge/Android-17%20%2F%20API%2037%20experimental-orange?style=for-the-badge&logo=android&logoColor=white)](#compatibility)
-[![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=for-the-badge&logo=apache&logoColor=white)](LICENSE)
+[![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=for-the-badge&logo=apache&logoColor=white)](../../LICENSE)
 
-Read this in other languages: [English](README.md), [简体中文](README.zh-CN.md), [繁體中文](README.zh-TW.md), [한국어](README.ko-KR.md), [日本語](README.ja-JP.md), [Polski](README.pl-PL.md), [Français](README.fr-FR.md), **Español**, [Português](README.pt-BR.md), [Русский](README.ru-RU.md), [Türkçe](README.tr-TR.md), [Italiano](README.it-IT.md), [Bahasa Indonesia](README.id-ID.md), [Українська](README.uk-UA.md), [العربية](README.ar-AR.md), [Tiếng Việt](README.vi-VN.md), [Deutsch](README.de-DE.md), [Uzbek](README.uz-UZ.md), [עברית](README.he-IL.md)
+Read this in other languages: [English](../../README.md), [简体中文](README.zh-CN.md), [繁體中文](README.zh-TW.md), [한국어](README.ko-KR.md), [日本語](README.ja-JP.md), [Polski](README.pl-PL.md), [Français](README.fr-FR.md), **Español**, [Português](README.pt-BR.md), [Русский](README.ru-RU.md), [Türkçe](README.tr-TR.md), [Italiano](README.it-IT.md), [Bahasa Indonesia](README.id-ID.md), [Українська](README.uk-UA.md), [العربية](README.ar-AR.md), [Tiếng Việt](README.vi-VN.md), [Deutsch](README.de-DE.md), [Uzbek](README.uz-UZ.md), [עברית](README.he-IL.md)
 
 La demostración se grabará tras verificar el dispositivo; no se presentará una simulación como prueba real.
 
@@ -18,11 +18,13 @@ Mantén pulsada una app del Espacio privado desbloqueado y elige **Añadir a la 
 
 Cuando está bloqueado, el acceso está diseñado para conservar su posición y pedir autenticación del sistema. Desbloqueado, abre directamente la copia privada. Cada solicitud se ejecuta una sola vez y se borra al cancelar, caducar o destruirse el Launcher. Nunca abre la copia principal como alternativa. Solo modifica elementos del módulo; no incluye widgets ni accesos internos. El nombre y el icono siguen visibles con el Espacio privado bloqueado.
 
+Los accesos bloqueados conservan sus colores y el candado nativo. La página informativa sigue el modo claro u oscuro del sistema con una paleta fija de negro, blanco y gris.
+
 <a id="compatibility"></a>
 
 ## Compatibilidad
 
-**Alfa experimental; verificación en dispositivo incompleta.** Destino: Pixel 10a, Android 17 / API 37, `CP2A.260805.005`, Pixel Launcher 17 (`907`), Magisk y LSPosed 2.2.0 (7854). Exige la huella APK exacta del [registro](docs/TESTING.md). Otras versiones desactivan el adaptador y registran el motivo. Compilar correctamente no demuestra compatibilidad real.
+**Alfa experimental; verificación en dispositivo incompleta.** Destino: Pixel 10a, Android 17 / API 37, `CP2A.260805.005`, Pixel Launcher 17 (`907`), Magisk y LSPosed 2.2.0 (7854). Exige la huella APK exacta del [registro](../TESTING.md). Otras versiones desactivan el adaptador y registran el motivo. Compilar correctamente no demuestra compatibilidad real.
 
 <a id="installation"></a>
 
@@ -40,7 +42,7 @@ Desbloquea el Espacio privado, mantén pulsada una app y añádela al inicio. To
 
 ## Compilación
 
-Usa JDK 17, SDK `platforms;android-37.0`, Build Tools `36.0.0` y el wrapper Gradle incluido. Ejecuta los comandos inferiores (`gradlew.bat` en Windows). CI compila, prueba los estados de desbloqueo, ejecuta Android lint y comprueba todos los README y enlaces locales. Las cuatro variables `PPSS_*` de [BUILDING](docs/BUILDING.md) configuran la firma; guarda las claves fuera del repositorio.
+Usa JDK 17, SDK `platforms;android-37.0`, Build Tools `36.0.0` y el wrapper Gradle incluido. Ejecuta los comandos inferiores (`gradlew.bat` en Windows). CI compila, prueba los estados de desbloqueo, ejecuta Android lint y comprueba todos los README y enlaces locales. Las cuatro variables `PPSS_*` de [BUILDING](../BUILDING.md) configuran la firma; guarda las claves fuera del repositorio.
 
 ```sh
 python3 -X utf8 tools/check_docs.py
@@ -57,4 +59,4 @@ Elimina los accesos que no quieras desde el Launcher, desactiva el módulo en LS
 
 ## Licencia
 
-[Apache-2.0](LICENSE). Sin afiliación con Google ni LSPosed. No se distribuyen APK de Google, archivos descompilados, registros del dispositivo, credenciales ni claves. Consulta la [arquitectura](docs/ARCHITECTURE.md) y las [verificaciones](docs/TESTING.md).
+[Apache-2.0](../../LICENSE). Sin afiliación con Google ni LSPosed. No se distribuyen APK de Google, archivos descompilados, registros del dispositivo, credenciales ni claves. Consulta la [arquitectura](../ARCHITECTURE.md) y las [verificaciones](../TESTING.md).

@@ -4,9 +4,9 @@
 
 [![Build](https://img.shields.io/github/actions/workflow/status/asadman1523/pixel-private-space-shortcuts/build.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/actions/workflows/build.yml)
 [![Android](https://img.shields.io/badge/Android-17%20%2F%20API%2037%20experimental-orange?style=for-the-badge&logo=android&logoColor=white)](#compatibility)
-[![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=for-the-badge&logo=apache&logoColor=white)](LICENSE)
+[![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=for-the-badge&logo=apache&logoColor=white)](../../LICENSE)
 
-Read this in other languages: [English](README.md), **简体中文**, [繁體中文](README.zh-TW.md), [한국어](README.ko-KR.md), [日本語](README.ja-JP.md), [Polski](README.pl-PL.md), [Français](README.fr-FR.md), [Español](README.es-ES.md), [Português](README.pt-BR.md), [Русский](README.ru-RU.md), [Türkçe](README.tr-TR.md), [Italiano](README.it-IT.md), [Bahasa Indonesia](README.id-ID.md), [Українська](README.uk-UA.md), [العربية](README.ar-AR.md), [Tiếng Việt](README.vi-VN.md), [Deutsch](README.de-DE.md), [Uzbek](README.uz-UZ.md), [עברית](README.he-IL.md)
+Read this in other languages: [English](../../README.md), **简体中文**, [繁體中文](README.zh-TW.md), [한국어](README.ko-KR.md), [日本語](README.ja-JP.md), [Polski](README.pl-PL.md), [Français](README.fr-FR.md), [Español](README.es-ES.md), [Português](README.pt-BR.md), [Русский](README.ru-RU.md), [Türkçe](README.tr-TR.md), [Italiano](README.it-IT.md), [Bahasa Indonesia](README.id-ID.md), [Українська](README.uk-UA.md), [العربية](README.ar-AR.md), [Tiếng Việt](README.vi-VN.md), [Deutsch](README.de-DE.md), [Uzbek](README.uz-UZ.md), [עברית](README.he-IL.md)
 
 功能演示将在真机验证后录制，不以模拟画面冒充实测结果。
 
@@ -20,11 +20,13 @@ Read this in other languages: [English](README.md), **简体中文**, [繁體中
 
 私密空间锁定时，桌面仍会显示应用名称和图标。
 
+锁定时快捷方式保留原本颜色和原生锁形标记。说明页面采用固定黑白灰配色，支持跟随系统深色／浅色模式。
+
 <a id="compatibility"></a>
 
 ## 兼容性
 
-**实验性测试版，真机验证尚未完成。** 目标：Pixel 10a、Android 17／API 37、版本 `CP2A.260805.005`、Pixel Launcher 17（`907`）、Magisk 和 LSPosed 2.2.0（7854）。必须匹配[验证记录](docs/TESTING.md)中的 APK 指纹，其他版本停用适配器并记录原因。构建成功不代表真机兼容。
+**实验性测试版，真机验证尚未完成。** 目标：Pixel 10a、Android 17／API 37、版本 `CP2A.260805.005`、Pixel Launcher 17（`907`）、Magisk 和 LSPosed 2.2.0（7854）。必须匹配[验证记录](../TESTING.md)中的 APK 指纹，其他版本停用适配器并记录原因。构建成功不代表真机兼容。
 
 <a id="installation"></a>
 
@@ -42,7 +44,7 @@ Read this in other languages: [English](README.md), **简体中文**, [繁體中
 
 ## 构建
 
-使用 JDK 17、Android SDK `platforms;android-37.0`、Build Tools `36.0.0` 及项目内的 Gradle wrapper。运行下方命令，Windows 使用 `gradlew.bat`。CI 构建、测试解锁状态机、运行 Android lint，并检查全部 README 和本地链接。发布签名使用 [BUILDING](docs/BUILDING.md) 中的四个 `PPSS_*` 环境变量，密钥保存在仓库之外。
+使用 JDK 17、Android SDK `platforms;android-37.0`、Build Tools `36.0.0` 及项目内的 Gradle wrapper。运行下方命令，Windows 使用 `gradlew.bat`。CI 构建、测试解锁状态机、运行 Android lint，并检查全部 README 和本地链接。发布签名使用 [BUILDING](../BUILDING.md) 中的四个 `PPSS_*` 环境变量，密钥保存在仓库之外。
 
 ```sh
 python3 -X utf8 tools/check_docs.py
@@ -59,4 +61,4 @@ python3 -X utf8 tools/check_docs.py
 
 ## 许可
 
-[Apache-2.0](LICENSE)。与 Google 或 LSPosed 无隶属关系。不发布 Google Launcher APK、反编译文件、设备日志、凭据或签名密钥。参见[实现说明](docs/ARCHITECTURE.md)和[验证记录](docs/TESTING.md)。
+[Apache-2.0](../../LICENSE)。与 Google 或 LSPosed 无隶属关系。不发布 Google Launcher APK、反编译文件、设备日志、凭据或签名密钥。参见[实现说明](../ARCHITECTURE.md)和[验证记录](../TESTING.md)。

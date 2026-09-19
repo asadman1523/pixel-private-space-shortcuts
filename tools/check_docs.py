@@ -1,6 +1,7 @@
 """Check complete language navigation, documentation structure and local links."""
 from pathlib import Path
 import re
+import os
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -14,7 +15,7 @@ LANGUAGES = {
 }
 
 def filename(code):
-    return 'README.md' if code == 'en' else f'README.{code}.md'
+    return 'README.md' if code == 'en' else f'docs/readme/README.{code}.md'
 
 def anchors(text):
     result = set(re.findall(r'<a id="([^"]+)"', text))
@@ -28,7 +29,8 @@ for code, name in LANGUAGES.items():
     assert len(content) > 1500, f'Incomplete translation: {path.name}'
     nav = next(line for line in content.splitlines() if line.startswith('Read this in other languages:'))
     for other, label in LANGUAGES.items():
-        expected = f'**{label}**' if other == code else f'[{label}]({filename(other)})'
+        relative = Path(os.path.relpath(ROOT / filename(other), path.parent)).as_posix()
+        expected = f'**{label}**' if other == code else f'[{label}]({relative})'
         assert expected in nav, f'{path.name}: missing language {other}'
     sections = ['features', 'compatibility', 'installation', 'usage', 'build', 'disable', 'license']
     assert all(section in anchors(content) for section in sections), path.name

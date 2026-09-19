@@ -4,9 +4,9 @@
 
 [![Build](https://img.shields.io/github/actions/workflow/status/asadman1523/pixel-private-space-shortcuts/build.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/actions/workflows/build.yml)
 [![Android](https://img.shields.io/badge/Android-17%20%2F%20API%2037%20experimental-orange?style=for-the-badge&logo=android&logoColor=white)](#compatibility)
-[![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=for-the-badge&logo=apache&logoColor=white)](LICENSE)
+[![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=for-the-badge&logo=apache&logoColor=white)](../../LICENSE)
 
-Read this in other languages: [English](README.md), [简体中文](README.zh-CN.md), [繁體中文](README.zh-TW.md), [한국어](README.ko-KR.md), [日本語](README.ja-JP.md), [Polski](README.pl-PL.md), [Français](README.fr-FR.md), [Español](README.es-ES.md), [Português](README.pt-BR.md), [Русский](README.ru-RU.md), [Türkçe](README.tr-TR.md), [Italiano](README.it-IT.md), [Bahasa Indonesia](README.id-ID.md), [Українська](README.uk-UA.md), **العربية**, [Tiếng Việt](README.vi-VN.md), [Deutsch](README.de-DE.md), [Uzbek](README.uz-UZ.md), [עברית](README.he-IL.md)
+Read this in other languages: [English](../../README.md), [简体中文](README.zh-CN.md), [繁體中文](README.zh-TW.md), [한국어](README.ko-KR.md), [日本語](README.ja-JP.md), [Polski](README.pl-PL.md), [Français](README.fr-FR.md), [Español](README.es-ES.md), [Português](README.pt-BR.md), [Русский](README.ru-RU.md), [Türkçe](README.tr-TR.md), [Italiano](README.it-IT.md), [Bahasa Indonesia](README.id-ID.md), [Українська](README.uk-UA.md), **العربية**, [Tiếng Việt](README.vi-VN.md), [Deutsch](README.de-DE.md), [Uzbek](README.uz-UZ.md), [עברית](README.he-IL.md)
 
 سيُسجّل العرض بعد التحقق على الجهاز. لن تُعرض محاكاة على أنها نتيجة اختبار حقيقي.
 
@@ -18,11 +18,13 @@ Read this in other languages: [English](README.md), [简体中文](README.zh-CN.
 
 صُمّم الاختصار ليحتفظ بموضعه عند القفل ويطلب مصادقة النظام عند الضغط. إذا كانت المساحة مفتوحة، يشغّل النسخة الخاصة مباشرة. يُنفَّذ الطلب مرة واحدة ويُمسح عند الإلغاء أو انتهاء المهلة أو تدمير Launcher. لا ينتقل إلى نسخة الملف الرئيسي. التعديلات تخص عناصر الوحدة فقط؛ لا تشمل الأدوات أو اختصارات التطبيق الداخلية. يبقى اسم التطبيق وأيقونته ظاهرين أثناء القفل.
 
+تحتفظ الاختصارات المقفلة بألوانها الأصلية وشارة القفل. تتبع صفحة المعلومات وضع النظام الفاتح أو الداكن بلوحة ثابتة من الأسود والأبيض والرمادي.
+
 <a id="compatibility"></a>
 
 ## التوافق
 
-**نسخة ألفا تجريبية؛ التحقق على الجهاز غير مكتمل.** Pixel 10a، Android 17 / API 37، `CP2A.260805.005`، Pixel Launcher 17 (`907`)، Magisk وLSPosed 2.2.0 (7854). يجب تطابق بصمة APK مع [سجل التحقق](docs/TESTING.md). تُعطّل الإصدارات الأخرى المهايئ وتسجل السبب. نجاح البناء لا يثبت التوافق.
+**نسخة ألفا تجريبية؛ التحقق على الجهاز غير مكتمل.** Pixel 10a، Android 17 / API 37، `CP2A.260805.005`، Pixel Launcher 17 (`907`)، Magisk وLSPosed 2.2.0 (7854). يجب تطابق بصمة APK مع [سجل التحقق](../TESTING.md). تُعطّل الإصدارات الأخرى المهايئ وتسجل السبب. نجاح البناء لا يثبت التوافق.
 
 <a id="installation"></a>
 
@@ -40,7 +42,7 @@ Read this in other languages: [English](README.md), [简体中文](README.zh-CN.
 
 ## البناء
 
-استخدم JDK 17 وSDK `platforms;android-37.0` وBuild Tools `36.0.0` وGradle wrapper المرفق. نفّذ الأوامر أدناه؛ في Windows استخدم `gradlew.bat`. يبني CI المشروع ويختبر حالات فتح القفل ويشغّل Android lint ويتحقق من جميع ملفات README والروابط المحلية. متغيرات `PPSS_*` الأربعة في [BUILDING](docs/BUILDING.md) تضبط التوقيع؛ احفظ المفاتيح خارج المستودع.
+استخدم JDK 17 وSDK `platforms;android-37.0` وBuild Tools `36.0.0` وGradle wrapper المرفق. نفّذ الأوامر أدناه؛ في Windows استخدم `gradlew.bat`. يبني CI المشروع ويختبر حالات فتح القفل ويشغّل Android lint ويتحقق من جميع ملفات README والروابط المحلية. متغيرات `PPSS_*` الأربعة في [BUILDING](../BUILDING.md) تضبط التوقيع؛ احفظ المفاتيح خارج المستودع.
 
 ```sh
 python3 -X utf8 tools/check_docs.py
@@ -57,4 +59,4 @@ python3 -X utf8 tools/check_docs.py
 
 ## الترخيص
 
-[Apache-2.0](LICENSE). لا ارتباط بـGoogle أو LSPosed. لا نوزع APK الخاص بـGoogle أو الملفات المفككة أو سجلات الجهاز أو بيانات الاعتماد أو المفاتيح. راجع [البنية](docs/ARCHITECTURE.md) و[سجل التحقق](docs/TESTING.md).
+[Apache-2.0](../../LICENSE). لا ارتباط بـGoogle أو LSPosed. لا نوزع APK الخاص بـGoogle أو الملفات المفككة أو سجلات الجهاز أو بيانات الاعتماد أو المفاتيح. راجع [البنية](../ARCHITECTURE.md) و[سجل التحقق](../TESTING.md).

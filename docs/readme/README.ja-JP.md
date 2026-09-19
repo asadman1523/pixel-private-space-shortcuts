@@ -4,9 +4,9 @@ LSPosed を使用し、Pixel のプライベートスペースのアプリを標
 
 [![Build](https://img.shields.io/github/actions/workflow/status/asadman1523/pixel-private-space-shortcuts/build.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/actions/workflows/build.yml)
 [![Android](https://img.shields.io/badge/Android-17%20%2F%20API%2037%20experimental-orange?style=for-the-badge&logo=android&logoColor=white)](#compatibility)
-[![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=for-the-badge&logo=apache&logoColor=white)](LICENSE)
+[![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=for-the-badge&logo=apache&logoColor=white)](../../LICENSE)
 
-Read this in other languages: [English](README.md), [简体中文](README.zh-CN.md), [繁體中文](README.zh-TW.md), [한국어](README.ko-KR.md), **日本語**, [Polski](README.pl-PL.md), [Français](README.fr-FR.md), [Español](README.es-ES.md), [Português](README.pt-BR.md), [Русский](README.ru-RU.md), [Türkçe](README.tr-TR.md), [Italiano](README.it-IT.md), [Bahasa Indonesia](README.id-ID.md), [Українська](README.uk-UA.md), [العربية](README.ar-AR.md), [Tiếng Việt](README.vi-VN.md), [Deutsch](README.de-DE.md), [Uzbek](README.uz-UZ.md), [עברית](README.he-IL.md)
+Read this in other languages: [English](../../README.md), [简体中文](README.zh-CN.md), [繁體中文](README.zh-TW.md), [한국어](README.ko-KR.md), **日本語**, [Polski](README.pl-PL.md), [Français](README.fr-FR.md), [Español](README.es-ES.md), [Português](README.pt-BR.md), [Русский](README.ru-RU.md), [Türkçe](README.tr-TR.md), [Italiano](README.it-IT.md), [Bahasa Indonesia](README.id-ID.md), [Українська](README.uk-UA.md), [العربية](README.ar-AR.md), [Tiếng Việt](README.vi-VN.md), [Deutsch](README.de-DE.md), [Uzbek](README.uz-UZ.md), [עברית](README.he-IL.md)
 
 実機検証後にデモを録画します。模擬画面を実測結果として掲載しません。
 
@@ -18,11 +18,13 @@ Read this in other languages: [English](README.md), [简体中文](README.zh-CN.
 
 ロック中も位置を保持し、タップするとシステム認証を求める設計です。解除済みなら同じプロファイルで直接開きます。待機中の起動は一度だけ実行し、キャンセル、タイムアウト、Launcher の破棄で消去します。メインプロファイルのアプリに切り替えません。変更対象は本モジュールが作成した項目のみで、ウィジェットやアプリ内ショートカットは含みません。ロック中もアプリ名とアイコンはホーム画面に表示されます。
 
+ロック中も元の色と標準の鍵バッジを保ちます。案内ページは固定の白黒・グレー配色で、システムのライト／ダークモードに従います。
+
 <a id="compatibility"></a>
 
 ## 互換性
 
-**実験的アルファ版。実機検証は未完了です。** 対象：Pixel 10a、Android 17 / API 37、`CP2A.260805.005`、Pixel Launcher 17（`907`）、Magisk、LSPosed 2.2.0（7854）。[検証記録](docs/TESTING.md)の APK 指紋との完全一致が必要です。別のバージョンではアダプターを無効にし、理由を記録します。ビルド成功は実機互換性の証明ではありません。
+**実験的アルファ版。実機検証は未完了です。** 対象：Pixel 10a、Android 17 / API 37、`CP2A.260805.005`、Pixel Launcher 17（`907`）、Magisk、LSPosed 2.2.0（7854）。[検証記録](../TESTING.md)の APK 指紋との完全一致が必要です。別のバージョンではアダプターを無効にし、理由を記録します。ビルド成功は実機互換性の証明ではありません。
 
 <a id="installation"></a>
 
@@ -40,7 +42,7 @@ Read this in other languages: [English](README.md), [简体中文](README.zh-CN.
 
 ## ビルド
 
-JDK 17、SDK `platforms;android-37.0`、Build Tools `36.0.0` と付属の Gradle wrapper を使用し、下記を実行します。Windows は `gradlew.bat` を使います。CI はビルド、認証状態の単体テスト、Android lint、全 README とローカルリンクの検査を行います。署名には [BUILDING](docs/BUILDING.md) の四つの `PPSS_*` 環境変数を使用し、鍵はリポジトリ外に保管します。
+JDK 17、SDK `platforms;android-37.0`、Build Tools `36.0.0` と付属の Gradle wrapper を使用し、下記を実行します。Windows は `gradlew.bat` を使います。CI はビルド、認証状態の単体テスト、Android lint、全 README とローカルリンクの検査を行います。署名には [BUILDING](../BUILDING.md) の四つの `PPSS_*` 環境変数を使用し、鍵はリポジトリ外に保管します。
 
 ```sh
 python3 -X utf8 tools/check_docs.py
@@ -57,4 +59,4 @@ python3 -X utf8 tools/check_docs.py
 
 ## ライセンス
 
-[Apache-2.0](LICENSE)。Google、LSPosed とは無関係です。Launcher APK、逆コンパイルしたファイル、端末ログ、認証情報、署名鍵は配布しません。[実装](docs/ARCHITECTURE.md)と[検証記録](docs/TESTING.md)も参照してください。
+[Apache-2.0](../../LICENSE)。Google、LSPosed とは無関係です。Launcher APK、逆コンパイルしたファイル、端末ログ、認証情報、署名鍵は配布しません。[実装](../ARCHITECTURE.md)と[検証記録](../TESTING.md)も参照してください。

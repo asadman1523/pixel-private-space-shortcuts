@@ -4,9 +4,9 @@
 
 [![Build](https://img.shields.io/github/actions/workflow/status/asadman1523/pixel-private-space-shortcuts/build.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/actions/workflows/build.yml)
 [![Android](https://img.shields.io/badge/Android-17%20%2F%20API%2037%20experimental-orange?style=for-the-badge&logo=android&logoColor=white)](#compatibility)
-[![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=for-the-badge&logo=apache&logoColor=white)](LICENSE)
+[![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=for-the-badge&logo=apache&logoColor=white)](../../LICENSE)
 
-Read this in other languages: [English](README.md), [简体中文](README.zh-CN.md), [繁體中文](README.zh-TW.md), [한국어](README.ko-KR.md), [日本語](README.ja-JP.md), [Polski](README.pl-PL.md), [Français](README.fr-FR.md), [Español](README.es-ES.md), [Português](README.pt-BR.md), [Русский](README.ru-RU.md), [Türkçe](README.tr-TR.md), [Italiano](README.it-IT.md), [Bahasa Indonesia](README.id-ID.md), **Українська**, [العربية](README.ar-AR.md), [Tiếng Việt](README.vi-VN.md), [Deutsch](README.de-DE.md), [Uzbek](README.uz-UZ.md), [עברית](README.he-IL.md)
+Read this in other languages: [English](../../README.md), [简体中文](README.zh-CN.md), [繁體中文](README.zh-TW.md), [한국어](README.ko-KR.md), [日本語](README.ja-JP.md), [Polski](README.pl-PL.md), [Français](README.fr-FR.md), [Español](README.es-ES.md), [Português](README.pt-BR.md), [Русский](README.ru-RU.md), [Türkçe](README.tr-TR.md), [Italiano](README.it-IT.md), [Bahasa Indonesia](README.id-ID.md), **Українська**, [العربية](README.ar-AR.md), [Tiếng Việt](README.vi-VN.md), [Deutsch](README.de-DE.md), [Uzbek](README.uz-UZ.md), [עברית](README.he-IL.md)
 
 Демонстрацію буде записано після перевірки пристрою. Імітація не видається за справжні результати.
 
@@ -18,11 +18,13 @@ Read this in other languages: [English](README.md), [简体中文](README.zh-CN.
 
 Після блокування ярлик має зберігати позицію та запитувати системну автентифікацію. Розблокований профіль відкривається безпосередньо. Запит виконується один раз і скидається після скасування, завершення часу або знищення Launcher. Основна копія не використовується замість приватної. Змінюються лише елементи модуля; без віджетів і внутрішніх ярликів. Назва й піктограма видимі навіть у заблокованому стані.
 
+Після блокування зберігаються початкові кольори й нативний замок. Інформаційна сторінка слідує світлій або темній темі системи зі сталою чорно-біло-сірою палітрою.
+
 <a id="compatibility"></a>
 
 ## Сумісність
 
-**Експериментальна альфа; перевірку пристрою не завершено.** Pixel 10a, Android 17 / API 37, `CP2A.260805.005`, Pixel Launcher 17 (`907`), Magisk, LSPosed 2.2.0 (7854). Потрібен точний відбиток APK із [протоколу](docs/TESTING.md). Інші версії вимикають адаптер із записом причини. Успішна збірка не доводить сумісність.
+**Експериментальна альфа; перевірку пристрою не завершено.** Pixel 10a, Android 17 / API 37, `CP2A.260805.005`, Pixel Launcher 17 (`907`), Magisk, LSPosed 2.2.0 (7854). Потрібен точний відбиток APK із [протоколу](../TESTING.md). Інші версії вимикають адаптер із записом причини. Успішна збірка не доводить сумісність.
 
 <a id="installation"></a>
 
@@ -40,7 +42,7 @@ Read this in other languages: [English](README.md), [简体中文](README.zh-CN.
 
 ## Збірка
 
-Використовуйте JDK 17, SDK `platforms;android-37.0`, Build Tools `36.0.0` і наданий Gradle wrapper. Виконайте команди нижче (`gradlew.bat` у Windows). CI збирає, тестує стани розблокування, запускає Android lint і перевіряє всі README та локальні посилання. Чотири змінні `PPSS_*` з [BUILDING](docs/BUILDING.md) налаштовують підпис; ключі зберігайте поза репозиторієм.
+Використовуйте JDK 17, SDK `platforms;android-37.0`, Build Tools `36.0.0` і наданий Gradle wrapper. Виконайте команди нижче (`gradlew.bat` у Windows). CI збирає, тестує стани розблокування, запускає Android lint і перевіряє всі README та локальні посилання. Чотири змінні `PPSS_*` з [BUILDING](../BUILDING.md) налаштовують підпис; ключі зберігайте поза репозиторієм.
 
 ```sh
 python3 -X utf8 tools/check_docs.py
@@ -57,4 +59,4 @@ python3 -X utf8 tools/check_docs.py
 
 ## Ліцензія
 
-[Apache-2.0](LICENSE). Без зв’язку з Google або LSPosed. APK Google, декомпільовані файли, журнали пристрою, облікові дані та ключі не поширюються. Див. [архітектуру](docs/ARCHITECTURE.md) й [перевірки](docs/TESTING.md).
+[Apache-2.0](../../LICENSE). Без зв’язку з Google або LSPosed. APK Google, декомпільовані файли, журнали пристрою, облікові дані та ключі не поширюються. Див. [архітектуру](../ARCHITECTURE.md) й [перевірки](../TESTING.md).
