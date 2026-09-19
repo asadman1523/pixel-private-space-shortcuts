@@ -34,6 +34,8 @@ Os atalhos bloqueados mantêm as cores e o cadeado nativo. A página informativa
 
 Instale o APK de [Releases](https://github.com/asadman1523/pixel-private-space-shortcuts/releases) no perfil principal. Ative **Pixel Private Space Shortcuts** no LSPosed, selecione somente `com.google.android.apps.nexuslauncher` e reinicie o Launcher ou o aparelho. APKs debug da CI são testes e podem ter outra assinatura.
 
+A página inclui **Abrir LSPosed**. O gerenciador independente abre diretamente; o integrado requer autorização inicial do Magisk. A permissão é usada apenas nesse botão, não para abrir apps privados.
+
 <a id="usage"></a>
 
 ## Uso

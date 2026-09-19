@@ -34,6 +34,8 @@ Qulflangan yorliqlar asl rang va qulf nishonini saqlaydi. Ma’lumot sahifasi do
 
 [Relizlar](https://github.com/asadman1523/pixel-private-space-shortcuts/releases) APK faylini asosiy profilga o‘rnating. LSPosed’da **Pixel Private Space Shortcuts** ni yoqing, faqat `com.google.android.apps.nexuslauncher` ni tanlang va Launcher yoki telefonni qayta ishga tushiring. CI debug APK fayllari sinov uchun, imzosi farq qilishi mumkin.
 
+Sahifada **LSPosed’ni ochish** tugmasi bor. Alohida menejer bevosita ochiladi; ichki menejer birinchi safar Magisk ruxsatini so‘raydi. Ruxsat faqat shu tugma bosilganda ishlatiladi, maxfiy ilovalarni ochishda emas.
+
 <a id="usage"></a>
 
 ## Foydalanish

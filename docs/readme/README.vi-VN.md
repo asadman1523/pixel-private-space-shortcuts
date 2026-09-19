@@ -34,6 +34,8 @@ Lối tắt bị khóa giữ màu gốc và dấu khóa gốc. Trang thông tin 
 
 Cài APK từ [bản phát hành](https://github.com/asadman1523/pixel-private-space-shortcuts/releases) vào hồ sơ chính. Bật **Pixel Private Space Shortcuts** trong LSPosed, chỉ chọn `com.google.android.apps.nexuslauncher`, rồi khởi động lại Launcher hoặc điện thoại. APK debug từ CI dùng để thử nghiệm và có thể mang chữ ký khác.
 
+Trang có nút **Mở LSPosed**. Trình quản lý độc lập mở trực tiếp; bản tích hợp cần cấp quyền Magisk lần đầu. Quyền chỉ dùng khi nhấn nút này, không dùng để mở ứng dụng riêng tư.
+
 <a id="usage"></a>
 
 ## Sử dụng

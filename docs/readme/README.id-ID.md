@@ -34,6 +34,8 @@ Pintasan terkunci mempertahankan warna dan lencana gembok asli. Halaman informas
 
 Pasang APK dari [rilis](https://github.com/asadman1523/pixel-private-space-shortcuts/releases) di profil utama. Aktifkan **Pixel Private Space Shortcuts** di LSPosed, pilih hanya `com.google.android.apps.nexuslauncher`, lalu mulai ulang Launcher atau ponsel. APK debug CI untuk pengujian dan mungkin memakai tanda tangan berbeda.
 
+Halaman menyediakan tombol **Buka LSPosed**. Pengelola mandiri langsung terbuka; pengelola bawaan memerlukan izin Magisk pertama kali. Izin hanya digunakan saat menekan tombol ini, bukan untuk membuka aplikasi pribadi.
+
 <a id="usage"></a>
 
 ## Penggunaan

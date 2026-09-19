@@ -34,6 +34,8 @@ Zablokowane skróty zachowują oryginalne kolory i natywną kłódkę. Strona in
 
 Zainstaluj APK z [wydań](https://github.com/asadman1523/pixel-private-space-shortcuts/releases) w profilu głównym. Włącz **Pixel Private Space Shortcuts** w LSPosed, wybierz tylko `com.google.android.apps.nexuslauncher` i uruchom ponownie Launcher lub telefon. Testowe APK debug z CI mogą mieć inny podpis.
 
+Strona informacyjna ma przycisk **Otwórz LSPosed**. Osobny menedżer otwiera się bezpośrednio; wbudowany wymaga pierwszej zgody Magisk. Uprawnienie jest używane tylko po naciśnięciu tego przycisku, nie do uruchamiania prywatnych aplikacji.
+
 <a id="usage"></a>
 
 ## Użycie

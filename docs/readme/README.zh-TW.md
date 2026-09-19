@@ -36,6 +36,8 @@ Read this in other languages: [English](../../README.md), [简体中文](README.
 
 從 [Releases](https://github.com/asadman1523/pixel-private-space-shortcuts/releases) 下載 APK，安裝到主空間。在 LSPosed 啟用 **Pixel Private Space Shortcuts**，作用域只勾選 `com.google.android.apps.nexuslauncher`，然後重啟 Launcher 或手機。CI 的 debug APK 屬於測試產物，可能使用不同簽章。
 
+說明頁面提供「開啟 LSPosed」按鈕。獨立管理器可直接開啟；內建管理器首次使用需要 Magisk 授權。這項權限只在按下此按鈕時使用，不用於開啟私人 App。
+
 <a id="usage"></a>
 
 ## 使用

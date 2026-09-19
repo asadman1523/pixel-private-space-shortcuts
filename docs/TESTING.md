@@ -41,9 +41,11 @@ The APK was inspected locally. The APK, decompiled sources, raw logs, serial num
 | Successful authentication → exactly one launch | Pending controlled confirmation |
 | Launcher restart while locked | PASS: shortcut and profile identity remain at the same location |
 | Native Remove action | PASS on a module-created workspace item |
-| Move and folders | Pending |
+| Move on Home screen | PASS: moved to another empty cell and restored to the original position |
+| Folders | Pending: automated drag attempts did not establish a folder result |
 | Themed icons; light/dark home and folder badges | Pending |
 | MainActivity light/dark | PASS: neutral palette, system bars and reconfiguration visually inspected |
+| Open LSPosed button | PASS: owner granted Magisk authorization and confirmed bundled manager opened; standalone-manager variant is not device-tested |
 | Repeated tapping during device authentication | Pending device test; unit state machine passes |
 | App deletion | Pending device test; uses native cleanup |
 | Profile deletion | Not tested: the owner's existing private profile must not be deleted for a test |

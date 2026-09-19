@@ -34,6 +34,8 @@ Les raccourcis verrouillés gardent leurs couleurs et leur cadenas natif. La pag
 
 Installez l’APK des [versions publiées](https://github.com/asadman1523/pixel-private-space-shortcuts/releases) dans le profil principal. Activez **Pixel Private Space Shortcuts** dans LSPosed, sélectionnez uniquement `com.google.android.apps.nexuslauncher`, puis redémarrez le Launcher ou le téléphone. Les APK debug de CI sont destinés aux tests et peuvent avoir une autre signature.
 
+La page propose **Ouvrir LSPosed**. Le gestionnaire autonome s’ouvre directement ; le gestionnaire intégré demande une autorisation Magisk initiale. Cette permission sert uniquement à ce bouton, pas au lancement des applications privées.
+
 <a id="usage"></a>
 
 ## Utilisation

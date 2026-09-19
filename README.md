@@ -36,6 +36,8 @@ Locked shortcuts retain their original colors and native lock badge. The informa
 
 Install the APK from [Releases](https://github.com/asadman1523/pixel-private-space-shortcuts/releases) in the main profile. Enable **Pixel Private Space Shortcuts** in LSPosed and select only `com.google.android.apps.nexuslauncher`. Restart Launcher or reboot. CI debug APKs are test artifacts and may use a different signing key.
 
+The information page includes an **Open LSPosed** button. A standalone manager opens directly; the bundled manager requires Magisk authorization the first time. This permission is used only when pressing this button, not when opening private apps.
+
 <a id="usage"></a>
 
 ## Usage

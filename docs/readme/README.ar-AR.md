@@ -34,6 +34,8 @@ Read this in other languages: [English](../../README.md), [简体中文](README.
 
 ثبّت APK من [الإصدارات](https://github.com/asadman1523/pixel-private-space-shortcuts/releases) في الملف الرئيسي. فعّل **Pixel Private Space Shortcuts** في LSPosed وحدد `com.google.android.apps.nexuslauncher` فقط ثم أعد تشغيل Launcher أو الهاتف. ملفات debug من CI للاختبار وقد تحمل توقيعاً مختلفاً.
 
+تتضمن الصفحة زر **فتح LSPosed**. يفتح المدير المستقل مباشرة؛ يحتاج المدير المدمج إلى إذن Magisk أول مرة. يُستخدم الإذن عند الضغط على هذا الزر فقط، وليس لفتح التطبيقات الخاصة.
+
 <a id="usage"></a>
 
 ## الاستخدام

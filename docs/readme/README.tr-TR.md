@@ -34,6 +34,8 @@ Kilitli kısayollar özgün renklerini ve yerel kilit rozetini korur. Bilgi sayf
 
 [Sürümler](https://github.com/asadman1523/pixel-private-space-shortcuts/releases) sayfasındaki APK’yi ana profile kurun. LSPosed’de **Pixel Private Space Shortcuts** modülünü etkinleştirip yalnızca `com.google.android.apps.nexuslauncher` seçin, Launcher’ı veya telefonu yeniden başlatın. CI debug APK’leri test içindir ve farklı imza kullanabilir.
 
+Bilgi sayfasında **LSPosed’i aç** düğmesi bulunur. Bağımsız yönetici doğrudan açılır; yerleşik yönetici ilk kullanımda Magisk izni ister. İzin yalnızca bu düğmede kullanılır, özel uygulamaları açmak için kullanılmaz.
+
 <a id="usage"></a>
 
 ## Kullanım

@@ -34,6 +34,8 @@ Read this in other languages: [English](../../README.md), [简体中文](README.
 
 [Releases](https://github.com/asadman1523/pixel-private-space-shortcuts/releases) の APK をメインプロファイルにインストールします。LSPosed で **Pixel Private Space Shortcuts** を有効にし、対象を `com.google.android.apps.nexuslauncher` のみに設定して Launcher または端末を再起動します。CI の debug APK はテスト用で、署名が異なる場合があります。
 
+案内ページには **LSPosed を開く** ボタンがあります。独立したマネージャーは直接開き、内蔵マネージャーでは初回に Magisk の許可が必要です。この権限はボタン操作時だけ使用し、プライベートアプリの起動には使いません。
+
 <a id="usage"></a>
 
 ## 使い方

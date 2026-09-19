@@ -34,6 +34,8 @@ Los accesos bloqueados conservan sus colores y el candado nativo. La página inf
 
 Instala el APK de [Releases](https://github.com/asadman1523/pixel-private-space-shortcuts/releases) en el perfil principal. Activa **Pixel Private Space Shortcuts** en LSPosed, selecciona solo `com.google.android.apps.nexuslauncher` y reinicia el Launcher o el teléfono. Los APK debug de CI son de prueba y pueden tener otra firma.
 
+La página incluye **Abrir LSPosed**. El gestor independiente se abre directamente; el integrado requiere autorización inicial de Magisk. Este permiso solo se usa al pulsar el botón, no para abrir apps privadas.
+
 <a id="usage"></a>
 
 ## Uso

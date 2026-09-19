@@ -34,6 +34,8 @@ Gesperrte Verknüpfungen behalten ihre Farben und das native Schloss. Die Inform
 
 APK aus den [Veröffentlichungen](https://github.com/asadman1523/pixel-private-space-shortcuts/releases) im Hauptprofil installieren. **Pixel Private Space Shortcuts** in LSPosed aktivieren, ausschließlich `com.google.android.apps.nexuslauncher` auswählen und Launcher oder Gerät neu starten. CI-Debug-APKs sind Testdateien und können anders signiert sein.
 
+Die Seite bietet **LSPosed öffnen**. Ein eigenständiger Manager öffnet direkt; der integrierte Manager benötigt zunächst eine Magisk-Freigabe. Die Berechtigung wird nur für diesen Knopf verwendet, nicht zum Öffnen privater Apps.
+
 <a id="usage"></a>
 
 ## Verwendung

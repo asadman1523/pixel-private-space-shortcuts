@@ -14,6 +14,8 @@ Native icon creation and private-profile badges are retained without custom badg
 
 The information activity uses a fixed neutral black/white/gray palette with system light/dark switching. It does not use wallpaper-derived colors or claim that module activation can be determined from the separate app process.
 
+Its **Open LSPosed** button first uses the standalone manager's launch intent, when installed. For the target device's bundled manager, it uses the fixed secret-code broadcast from the installed LSPosed 2.2.0 Magisk `action.sh`. This optional button asks Magisk for root only when explicitly pressed. Private-app shortcuts themselves never run shell commands or request root. Denial or timeout leaves a retryable button and directs the user to Magisk's Modules page.
+
 ## Opening and authentication
 
 The verified native workspace click listener intercepts owned entries. An invalid ownership/profile serial fails closed. A valid, unlocked target opens via `LauncherApps.startMainActivity` with the original private user. If an activity alias changed, only a unique launcher activity in the same package and profile may be used. No owner-profile fallback exists.

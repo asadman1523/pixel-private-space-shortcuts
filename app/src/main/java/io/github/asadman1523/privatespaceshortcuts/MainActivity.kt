@@ -18,6 +18,8 @@ import android.view.WindowInsetsController
 import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
+import android.widget.Toast
+import java.util.concurrent.TimeUnit
 
 /** Local information page and harmless per-profile acceptance-test fixture. */
 class MainActivity : Activity() {
@@ -52,6 +54,9 @@ class MainActivity : Activity() {
         page.addView(label(t("開始使用", "GET STARTED"), 12f, secondary, true), spaced(28))
         val setup = card(surface)
         setup.addView(step("1", t("啟用模組", "Enable the module"), t("在 LSPosed 啟用本模組。", "Enable Private Space Shortcuts in LSPosed.")))
+        lateinit var managerButton: TextView
+        managerButton = action(t("開啟 LSPosed", "Open LSPosed"), false) { openLsposed(managerButton) }
+        setup.addView(managerButton, spaced(12))
         setup.addView(step("2", t("選擇 Pixel Launcher", "Select Pixel Launcher"), t("作用域只勾選 Pixel Launcher，然後重新啟動桌面。", "Scope only Pixel Launcher, then restart the launcher.")), spaced(22))
         setup.addView(action(t("複製套件名稱", "Copy package name"), false) {
             getSystemService(ClipboardManager::class.java).setPrimaryClip(ClipData.newPlainText("Pixel Launcher", Native907.PACKAGE))
@@ -61,6 +66,36 @@ class MainActivity : Activity() {
         page.addView(action(t("在 GitHub 查看專案", "View project on GitHub"), true) {
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/asadman1523/pixel-private-space-shortcuts")))
         }, spaced(24))
+    }
+
+    private fun openLsposed(button: View) {
+        val installedManager = packageManager.getLaunchIntentForPackage("org.lsposed.manager")
+        if (installedManager != null) {
+            try { startActivity(installedManager); return } catch (_: RuntimeException) { /* Try the bundled manager. */ }
+        }
+        // This fixed broadcast is the installed LSPosed 2.2.0 Magisk action.sh entrypoint.
+        // Root is requested only for this explicit button press, never for private-app shortcuts.
+        Toast.makeText(this, t("首次開啟請允許 Magisk 授權", "Allow the Magisk request to open the bundled manager"), Toast.LENGTH_LONG).show()
+        button.isEnabled = false
+        Thread({
+            var process: java.lang.Process? = null
+            val success = try {
+                process = ProcessBuilder("su", "-c", "am broadcast -a android.telephony.action.SECRET_CODE -d android_secret_code://5776733 android")
+                    .redirectErrorStream(true).start()
+                val finished = process.waitFor(60, TimeUnit.SECONDS)
+                finished && process.exitValue() == 0
+            } catch (_: Exception) { false }
+            finally {
+                process?.destroy()
+                runCatching { process?.inputStream?.close() }
+            }
+            runOnUiThread {
+                if (!isDestroyed) {
+                    button.isEnabled = true
+                    if (!success) Toast.makeText(this, t("無法開啟 LSPosed，請從 Magisk 的模組頁開啟", "Could not open LSPosed. Open it from Magisk's Modules page."), Toast.LENGTH_LONG).show()
+                }
+            }
+        }, "open-lsposed").start()
     }
 
     private fun step(number: String, title: String, description: String): View = LinearLayout(this).apply {
