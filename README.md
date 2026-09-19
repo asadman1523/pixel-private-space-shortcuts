@@ -28,7 +28,7 @@ Locked shortcuts retain their original colors and native lock badge. The informa
 
 ## Compatibility
 
-**Experimental alpha — device verification is incomplete.** Target: Pixel 10a, Android 17 / API 37, build `CP2A.260805.005`, Pixel Launcher 17 (`907`), Magisk and LSPosed 2.2.0 (7854). Hooks require the exact APK fingerprint documented in the [verification record](docs/TESTING.md). Other versions disable the adapter and log the reason. A successful build does not establish device compatibility.
+**Experimental alpha; device verification incomplete.** Targeting Android 15+ (API 35+) Pixel devices. Tested on Pixel 10a, Android 17 / API 37, `CP2A.260805.005`, Pixel Launcher 17 (`907`), Magisk and LSPosed 2.2.0 (7854). The adapter will attempt to load on newer or different versions of Pixel Launcher, but updates may break internal hooks. A successful build is not proof of compatibility.
 
 <a id="installation"></a>
 

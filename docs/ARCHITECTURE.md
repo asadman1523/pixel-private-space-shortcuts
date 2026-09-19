@@ -1,6 +1,6 @@
 # Launcher 907 adapter
 
-This is one Kotlin APK using the legacy Xposed API. The entry point rejects every package/process except `com.google.android.apps.nexuslauncher`. It checks Android API 37, launcher version code 907 and the exact APK SHA-256 before resolving adapter entry points. Hook installation failures unhook already-installed entry points. Unsupported versions log a reason instead of attempting name-based guesses.
+This is one Kotlin APK using the legacy Xposed API. The entry point rejects every package/process except `com.google.android.apps.nexuslauncher`. It expects Android API 35+ and logs warnings for mismatched launcher version codes or APK SHA-256 fingerprints, but attempts to install hooks anyway for better forward compatibility. Hook installation failures unhook already-installed entry points.
 
 ## Native menu, drag and persistence
 

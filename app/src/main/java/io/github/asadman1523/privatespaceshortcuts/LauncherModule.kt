@@ -19,11 +19,14 @@ class LauncherModule : IXposedHookLoadPackage {
                 override fun afterHookedMethod(hook: MethodHookParam) {
                     val app = hook.thisObject as Application
                     try {
-                        val info = app.packageManager.getPackageInfo(Native907.PACKAGE, 0)
-                        if (Build.VERSION.SDK_INT != 37 || info.longVersionCode != 907L) {
-                            log("Unsupported OS or launcher version; no launcher hooks installed")
+                        if (Build.VERSION.SDK_INT < 35) {
+                            log("Unsupported OS (API < 35); no launcher hooks installed")
                             return
                         }
+                        
+                        val info = app.packageManager.getPackageInfo(Native907.PACKAGE, 0)
+                        log("Targeting launcher version ${info.longVersionCode}")
+                        
                         val digest = MessageDigest.getInstance("SHA-256")
                         File(app.applicationInfo.sourceDir).inputStream().use { input ->
                             val buffer = ByteArray(65536)
@@ -35,11 +38,11 @@ class LauncherModule : IXposedHookLoadPackage {
                         }
                         val sha = digest.digest().joinToString("") { "%02x".format(it) }
                         if (sha != Native907.APK_SHA256) {
-                            log("Unsupported launcher APK fingerprint; no launcher hooks installed")
-                            return
+                            log("Launcher APK fingerprint differs from 907 reference ($sha), attempting to hook anyway...")
                         }
+                        
                         Native907(app, param.classLoader).install()
-                        log("Enabled native adapter for Launcher 907")
+                        log("Enabled native adapter for Launcher")
                     } catch (error: Throwable) {
                         // Installation validates all entrypoints before registering hooks.
                         log("Adapter initialization failed: ${error.javaClass.simpleName}")
