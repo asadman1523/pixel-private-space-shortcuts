@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Private Space Shortcuts</string>
-    <string name="module_description">Native Pixel Launcher shortcuts for Private Space. Requires Launcher 907 on Android 17.</string>
+    <string name="app_name">PSS</string>
+    <string name="module_description">Native Pixel Launcher shortcuts for Private Space. Requires Android 15+.</string>
     <string-array name="xposed_scope"><item>com.google.android.apps.nexuslauncher</item></string-array>
 </resources>

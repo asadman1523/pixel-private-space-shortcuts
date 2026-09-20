@@ -1,4 +1,4 @@
-package com.jackwu.privatespaceshortcuts
+package io.github.asadman1523.privatespaceshortcuts
 
 import android.app.Activity
 import android.content.ClipData

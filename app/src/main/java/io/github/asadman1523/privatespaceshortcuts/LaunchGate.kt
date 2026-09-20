@@ -1,4 +1,4 @@
-package com.jackwu.privatespaceshortcuts
+package io.github.asadman1523.privatespaceshortcuts
 
 data class TargetKey(val profileSerial: Long, val component: String)
 

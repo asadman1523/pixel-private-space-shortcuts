@@ -1,4 +1,4 @@
-package com.jackwu.privatespaceshortcuts
+package io.github.asadman1523.privatespaceshortcuts
 
 import org.junit.Assert.*
 import org.junit.Test

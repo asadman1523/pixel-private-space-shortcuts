@@ -1,4 +1,4 @@
-package com.jackwu.privatespaceshortcuts
+package io.github.asadman1523.privatespaceshortcuts
 
 import android.app.Activity
 import android.app.Application
@@ -322,7 +322,7 @@ class Native907(private val app: Application, private val loader: ClassLoader) {
     companion object {
         const val PACKAGE = "com.google.android.apps.nexuslauncher"
         const val APK_SHA256 = "ef87b593f9131a6261691c6b6951d307610c6840c6b8a7e445a6e8026766644e"
-        private const val OWNER = "com.jackwu.privatespaceshortcuts.OWNED"
-        private const val SERIAL = "com.jackwu.privatespaceshortcuts.PROFILE_SERIAL"
+        private const val OWNER = "io.github.asadman1523.privatespaceshortcuts.OWNED"
+        private const val SERIAL = "io.github.asadman1523.privatespaceshortcuts.PROFILE_SERIAL"
     }
 }
