@@ -16,7 +16,7 @@ Die Vorführung wird nach der Geräteprüfung aufgenommen. Simulationen werden n
 
 ## Funktionen
 
-Eine App im entsperrten privaten Bereich lange drücken und **Zum Startbildschirm hinzufügen** wählen oder direkt auf den Startbildschirm ziehen. Dies funktioniert auch für private Apps in der Vorschlagszeile oben in der App-Übersicht. Das Modul verwendet Platzierung, Datenbank, Symbole und Schlosskennzeichnung von Pixel Launcher. Profilseriennummer und Startkomponente bestimmen das Ziel und verhindern Duplikate. Verschieben, Ordner und Entfernen werden unterstützt.
+Eine App im entsperrten privaten Bereich lange drücken und **Zum Startbildschirm hinzufügen** wählen oder direkt auf den Startbildschirm ziehen. Dies funktioniert auch für private Apps in der Vorschlagszeile oben in der App-Übersicht. Das Modul verwendet Platzierung, Datenbank, Symbole und Schlosskennzeichnung von Pixel Launcher. Profilseriennummer und Startkomponente bestimmen das Ziel. Verschieben, Ordner und Entfernen werden unterstützt.
 
 Bei gesperrtem Profil soll die Position erhalten bleiben; Antippen fordert die Systemauthentifizierung an. Entsperrt öffnet sich dieselbe private App direkt. Jede Anfrage wird einmal ausgeführt und bei Abbruch, Zeitablauf oder Zerstörung des Launchers gelöscht. Kein Ausweichen auf das Hauptprofil. Nur vom Modul erstellte Einträge werden geändert; keine Widgets oder internen App-Verknüpfungen. Name und Symbol bleiben auch bei gesperrtem privaten Bereich sichtbar.
 
@@ -40,7 +40,7 @@ Die Seite bietet **LSPosed öffnen**. Ein eigenständiger Manager öffnet direkt
 
 ## Verwendung
 
-Privaten Bereich entsperren, App lange drücken und **Zum Startbildschirm hinzufügen** wählen oder auf den Startbildschirm ziehen. Private Apps in der Vorschlagszeile können ebenfalls so hinzugefügt werden. Das Symbol öffnet dieselbe private Kopie; bei Bedarf in Android authentifizieren. Abbrechen verwirft die Anfrage. Langes Drücken ermöglicht Verschieben, Ordner und Entfernen. Erneutes Hinzufügen meldet den vorhandenen Eintrag. Die Informations-App des Moduls eignet sich auch im privaten Bereich als Test ohne sensible Daten.
+Privaten Bereich entsperren, App lange drücken und **Zum Startbildschirm hinzufügen** wählen oder auf den Startbildschirm ziehen. Private Apps in der Vorschlagszeile können ebenfalls so hinzugefügt werden. Das Symbol öffnet dieselbe private Kopie; bei Bedarf in Android authentifizieren. Abbrechen verwirft die Anfrage. Langes Drücken ermöglicht Verschieben, Ordner und Entfernen. Die Informations-App des Moduls eignet sich auch im privaten Bereich als Test ohne sensible Daten.
 
 <a id="build"></a>
 

@@ -16,7 +16,7 @@ La démonstration sera enregistrée après vérification sur appareil. Aucune si
 
 ## Fonctionnalités
 
-Appuyez longuement sur une application de l’Espace privé déverrouillé et choisissez **Ajouter à l’écran d’accueil**, ou faites-la glisser directement vers l’écran d’accueil. Cela fonctionne également pour les applications privées affichées dans la ligne de suggestions en haut de Toutes les applications. Le module utilise le placement, la base de données, les icônes et le cadenas natifs de Pixel Launcher. Le numéro de série du profil et le composant de lancement identifient la cible et empêchent les doublons. Déplacement, dossiers et suppression sont pris en charge.
+Appuyez longuement sur une application de l’Espace privé déverrouillé et choisissez **Ajouter à l’écran d’accueil**, ou faites-la glisser directement vers l’écran d’accueil. Cela fonctionne également pour les applications privées affichées dans la ligne de suggestions en haut de Toutes les applications. Le module utilise le placement, la base de données, les icônes et le cadenas natifs de Pixel Launcher. Le numéro de série du profil et le composant de lancement identifient la cible. Déplacement, dossiers et suppression sont pris en charge.
 
 À l’état verrouillé, le raccourci est conçu pour conserver sa position et demander l’authentification système. Une fois déverrouillé, le bon profil s’ouvre directement. La demande n’est exécutée qu’une fois et disparaît après annulation, expiration ou destruction du Launcher. Aucun repli vers le profil principal. Seuls les éléments créés par le module sont modifiés, sans widgets ni raccourcis internes. Le nom et l’icône restent visibles même lorsque l’Espace privé est verrouillé.
 
@@ -40,7 +40,7 @@ La page propose **Ouvrir LSPosed**. Le gestionnaire autonome s’ouvre directeme
 
 ## Utilisation
 
-Déverrouillez l’Espace privé, maintenez une application et ajoutez-la à l’accueil, ou faites-la glisser vers l’accueil. Les applications privées de la ligne de suggestions peuvent également être ajoutées de la même manière. Touchez son icône pour ouvrir la même instance privée ; authentifiez-vous dans Android si nécessaire. Annuler abandonne cette demande. Un appui long permet déplacement, dossier ou suppression. Un ajout répété signale le raccourci existant. L’application d’information du module peut servir de test sans données sensibles dans l’Espace privé.
+Déverrouillez l’Espace privé, maintenez une application et ajoutez-la à l’accueil, ou faites-la glisser vers l’accueil. Les applications privées de la ligne de suggestions peuvent également être ajoutées de la même manière. Touchez son icône pour ouvrir la même instance privée ; authentifiez-vous dans Android si nécessaire. Annuler abandonne cette demande. Un appui long permet déplacement, dossier ou suppression. L’application d’information du module peut servir de test sans données sensibles dans l’Espace privé.
 
 <a id="build"></a>
 

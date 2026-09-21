@@ -16,7 +16,7 @@ La dimostrazione verrà registrata dopo la verifica sul dispositivo, senza spacc
 
 ## Funzioni
 
-Tieni premuta un’app nello Spazio privato sbloccato e scegli l’azione nativa **Aggiungi alla schermata Home**, oppure trascinala direttamente nella schermata Home. Funziona anche per le app private mostrate nella riga dei suggerimenti in cima a Tutte le app. Il modulo usa posizionamento, database, icone e lucchetto di Pixel Launcher. Numero di serie del profilo e componente di avvio identificano la destinazione e impediscono duplicati. Supporta spostamento, cartelle e rimozione.
+Tieni premuta un’app nello Spazio privato sbloccato e scegli l’azione nativa **Aggiungi alla schermata Home**, oppure trascinala direttamente nella schermata Home. Funziona anche per le app private mostrate nella riga dei suggerimenti in cima a Tutte le app. Il modulo usa posizionamento, database, icone e lucchetto di Pixel Launcher. Numero di serie del profilo e componente di avvio identificano la destinazione. Supporta spostamento, cartelle e rimozione.
 
 Quando è bloccato, il collegamento è progettato per conservare la posizione e richiedere l’autenticazione di sistema. Se sbloccato, apre direttamente la copia privata. Ogni richiesta viene eseguita una volta e cancellata dopo annullamento, scadenza o distruzione del Launcher. Nessun ripiego sul profilo principale. Modifica solo elementi del modulo, senza widget o collegamenti interni. Nome e icona restano visibili anche con lo Spazio privato bloccato.
 
@@ -40,7 +40,7 @@ La pagina offre **Apri LSPosed**. Il gestore autonomo si apre direttamente; quel
 
 ## Utilizzo
 
-Sblocca lo Spazio privato, tieni premuta un’app e seleziona **Aggiungi alla schermata Home**, oppure trascinala nella schermata Home. Anche le app private nella riga dei suggerimenti possono essere aggiunte nello stesso modo. Tocca l’icona per aprire la stessa copia privata e autenticati in Android se richiesto. Annullare scarta la richiesta. Tieni premuta l’icona per spostarla, inserirla in una cartella o rimuoverla. Un nuovo tentativo di aggiunta segnala che esiste già. L’app informativa del modulo può essere usata nello Spazio privato come prova senza dati sensibili.
+Sblocca lo Spazio privato, tieni premuta un’app e seleziona **Aggiungi alla schermata Home**, oppure trascinala nella schermata Home. Anche le app private nella riga dei suggerimenti possono essere aggiunte nello stesso modo. Tocca l’icona per aprire la stessa copia privata e autenticati in Android se richiesto. Annullare scarta la richiesta. Tieni premuta l’icona per spostarla, inserirla in una cartella o rimuoverla. L’app informativa del modulo può essere usata nello Spazio privato come prova senza dati sensibili.
 
 <a id="build"></a>
 

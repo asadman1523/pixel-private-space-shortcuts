@@ -16,7 +16,7 @@ Video minh họa sẽ được ghi sau khi kiểm chứng trên thiết bị; kh
 
 ## Tính năng
 
-Nhấn giữ ứng dụng trong Không gian riêng tư đã mở khóa và chọn **Thêm vào màn hình chính**, hoặc kéo trực tiếp ra màn hình chính. Thao tác này cũng hoạt động với các ứng dụng riêng tư ở hàng đề xuất trên đầu Tất cả ứng dụng. Mô-đun dùng cách bố trí, cơ sở dữ liệu, biểu tượng và dấu khóa của Pixel Launcher. Số sê-ri hồ sơ cùng thành phần khởi chạy xác định đích và ngăn trùng lặp. Hỗ trợ di chuyển, thư mục và xóa.
+Nhấn giữ ứng dụng trong Không gian riêng tư đã mở khóa và chọn **Thêm vào màn hình chính**, hoặc kéo trực tiếp ra màn hình chính. Thao tác này cũng hoạt động với các ứng dụng riêng tư ở hàng đề xuất trên đầu Tất cả ứng dụng. Mô-đun dùng cách bố trí, cơ sở dữ liệu, biểu tượng và dấu khóa của Pixel Launcher. Số sê-ri hồ sơ cùng thành phần khởi chạy xác định đích. Hỗ trợ di chuyển, thư mục và xóa.
 
 Khi khóa, lối tắt được thiết kế để giữ nguyên vị trí và yêu cầu xác thực hệ thống khi chạm. Nếu đã mở khóa, ứng dụng riêng tư mở trực tiếp. Mỗi yêu cầu chỉ chạy một lần và bị xóa khi hủy, hết hạn hoặc Launcher bị hủy. Không chuyển sang bản trong hồ sơ chính. Chỉ thay đổi mục do mô-đun tạo; không gồm tiện ích hay lối tắt nội bộ. Tên và biểu tượng vẫn hiển thị khi Không gian riêng tư bị khóa.
 
@@ -40,7 +40,7 @@ Trang có nút **Mở LSPosed**. Trình quản lý độc lập mở trực ti�
 
 ## Sử dụng
 
-Mở khóa Không gian riêng tư, nhấn giữ ứng dụng và chọn **Thêm vào màn hình chính**, hoặc kéo ra màn hình chính. Các ứng dụng riêng tư trong hàng đề xuất cũng có thể được thêm theo cách tương tự. Chạm biểu tượng để mở đúng bản riêng tư, xác thực bằng Android nếu cần. Hủy sẽ bỏ yêu cầu. Nhấn giữ biểu tượng để di chuyển, đưa vào thư mục hoặc xóa. Thêm lại sẽ báo lối tắt đã tồn tại. Có thể cài ứng dụng thông tin của mô-đun trong Không gian riêng tư để thử mà không dùng dữ liệu nhạy cảm.
+Mở khóa Không gian riêng tư, nhấn giữ ứng dụng và chọn **Thêm vào màn hình chính**, hoặc kéo ra màn hình chính. Các ứng dụng riêng tư trong hàng đề xuất cũng có thể được thêm theo cách tương tự. Chạm biểu tượng để mở đúng bản riêng tư, xác thực bằng Android nếu cần. Hủy sẽ bỏ yêu cầu. Nhấn giữ biểu tượng để di chuyển, đưa vào thư mục hoặc xóa. Có thể cài ứng dụng thông tin của mô-đun trong Không gian riêng tư để thử mà không dùng dữ liệu nhạy cảm.
 
 <a id="build"></a>
 

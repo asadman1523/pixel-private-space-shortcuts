@@ -26,13 +26,15 @@ The APK was inspected locally. The APK, decompiled sources, raw logs, serial num
 
 ## Device acceptance matrix
 
+The PASS entries below are historical observations of earlier builds. As of 2026-09-21, the project no longer requires an APK version/fingerprint allowlist or duplicate-shortcut prevention. This is a documentation-only policy update; runtime behavior has not been changed or retested.
+
 | Scenario | Result / evidence |
 | --- | --- |
 | Adapter loads in Launcher | PASS: fingerprint match and enabled adapter diagnostic |
 | Native long-press entry | PASS: original localized "Add to Home screen" row appears for a private app |
 | Add to workspace | PASS: native workspace entry and serialized profile identity observed |
 | Correct private instance while unlocked | PASS: resumed test activity belongs to the private user, not the owner |
-| Duplicate add | PASS: rejection diagnostic; original shortcut retained |
+| Duplicate add (historical) | Previously PASS: rejection diagnostic; original shortcut retained. Duplicate prevention is no longer an acceptance requirement. |
 | Native lock badge | PASS for ordinary home icons: one native badge, no additional overlay |
 | Lock retains icon | PASS: icon and position remain after locking |
 | Full color while locked | PASS after removing the owned item's quiet visual-disable flag |
@@ -43,7 +45,7 @@ The APK was inspected locally. The APK, decompiled sources, raw logs, serial num
 | Native Remove action | PASS (alpha.3): alpha.2 had a misidentification bug where Remove triggered the Add-to-Home path due to R8-merged `SystemShortcut$Install.onClick`; alpha.3 uses a weak-reference set of exact factory-created add actions to distinguish Add from Remove |
 | Move on Home screen | PASS: moved to another empty cell and restored to the original position |
 | Drag from All Apps to Home screen | PASS (alpha.3): native drag-and-drop places a module-owned shortcut with correct private profile identity |
-| Duplicate drag rejection | PASS (alpha.3): second drag of the same private app is rejected; diagnostic `Duplicate shortcut rejected` |
+| Duplicate drag rejection (historical) | Previously PASS (alpha.3): second drag rejected. Duplicate prevention is no longer an acceptance requirement. |
 | Adaptive icon | PASS (alpha.3): blue background (#6291F6), white rounded-S foreground, single native lock badge |
 | Prediction row: long-press Add to Home screen | Pending device test |
 | Prediction row: drag to Home screen | Pending device test |

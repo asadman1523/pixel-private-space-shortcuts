@@ -16,7 +16,7 @@ A demonstração será gravada após a verificação no aparelho. Simulações n
 
 ## Recursos
 
-Pressione um app no Espaço privado desbloqueado e selecione a ação nativa **Adicionar à tela inicial**, ou arraste-o diretamente para a tela inicial. Isso também funciona para apps privados exibidos na linha de sugestões no topo de Todos os apps. O módulo reutiliza a posição, o banco de dados, os ícones e o cadeado do Pixel Launcher. O número de série do perfil e o componente de inicialização identificam o destino, evitando duplicatas. É possível mover, organizar em pastas e remover.
+Pressione um app no Espaço privado desbloqueado e selecione a ação nativa **Adicionar à tela inicial**, ou arraste-o diretamente para a tela inicial. Isso também funciona para apps privados exibidos na linha de sugestões no topo de Todos os apps. O módulo reutiliza a posição, o banco de dados, os ícones e o cadeado do Pixel Launcher. O número de série do perfil e o componente de inicialização identificam o destino. É possível mover, organizar em pastas e remover.
 
 Bloqueado, o atalho foi projetado para manter sua posição e solicitar autenticação do sistema; desbloqueado, abre a mesma cópia privada diretamente. Cada pedido é executado uma vez e descartado ao cancelar, expirar ou encerrar o Launcher. Nunca usa a cópia principal como alternativa. Afeta apenas itens do módulo, sem widgets ou atalhos internos. Nome e ícone ficam visíveis mesmo com o Espaço privado bloqueado.
 
@@ -40,7 +40,7 @@ A página inclui **Abrir LSPosed**. O gerenciador independente abre diretamente;
 
 ## Uso
 
-Desbloqueie o Espaço privado, pressione um app e selecione **Adicionar à tela inicial**, ou arraste-o para a tela inicial. Apps privados na linha de sugestões também podem ser adicionados da mesma forma. Toque no ícone para abrir a mesma cópia privada e autentique-se pelo Android quando necessário. Cancelar descarta o pedido. Pressione o ícone para mover, guardar em pasta ou remover. Adicionar novamente avisa que já existe. O app informativo do módulo pode ser instalado no Espaço privado como teste sem dados sensíveis.
+Desbloqueie o Espaço privado, pressione um app e selecione **Adicionar à tela inicial**, ou arraste-o para a tela inicial. Apps privados na linha de sugestões também podem ser adicionados da mesma forma. Toque no ícone para abrir a mesma cópia privada e autentique-se pelo Android quando necessário. Cancelar descarta o pedido. Pressione o ícone para mover, guardar em pasta ou remover. O app informativo do módulo pode ser instalado no Espaço privado como teste sem dados sensíveis.
 
 <a id="build"></a>
 

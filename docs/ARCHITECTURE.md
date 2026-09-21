@@ -1,6 +1,6 @@
 # Launcher 907 adapter
 
-This is one Kotlin APK using the legacy Xposed API. The entry point rejects every package/process except `com.google.android.apps.nexuslauncher`. It expects Android API 35+ and logs warnings for mismatched launcher version codes or APK SHA-256 fingerprints, but attempts to install hooks anyway for better forward compatibility. Hook installation failures unhook already-installed entry points.
+This is one Kotlin APK using the legacy Xposed API. The entry point rejects every package/process except `com.google.android.apps.nexuslauncher`. It expects Android API 35+ and attempts hook installation without an APK version or fingerprint allowlist. A differing APK fingerprint is logged for diagnostics and does not block installation. Compatibility still depends on the required Launcher classes, methods and constructors being available; this does not establish support for untested builds. Hook installation failures unhook already-installed entry points.
 
 ## Native menu, drag and persistence
 
@@ -8,7 +8,7 @@ This is one Kotlin APK using the legacy Xposed API. The entry point rejects ever
 
 R8 merges Add, Remove and Install into a single `SystemShortcut$Install.onClick`. A weak-reference set (`addActions`) records only the exact factory-created add actions. Only entries in this set are intercepted; native Remove and other merged actions pass through to Launcher unchanged.
 
-`Workspace.beginDragShared` (six-parameter version) is hooked for the same item types. When a private-profile `AppInfo` or prediction-row `WorkspaceItemInfo` begins dragging, only the drag payload is replaced with a module-owned `WorkspaceItemInfo`. The source list keeps its original item. `Workspace.acceptDrop` and `Folder.acceptDrop` check new owned items (ID not yet assigned) for duplicates using **profile serial + launch component** against the native workspace model, including items in folders. Moving an existing Home screen item is not treated as a new add.
+`Workspace.beginDragShared` (six-parameter version) is hooked for the same item types. When a private-profile `AppInfo` or prediction-row `WorkspaceItemInfo` begins dragging, only the drag payload is replaced with a module-owned `WorkspaceItemInfo`. The source list keeps its original item. Duplicate-shortcut prevention is not a project requirement. Add and drop placement follow native Launcher behavior. The current implementation suppresses concurrent add requests for the same target while placement is pending; it does not check for existing workspace shortcuts. Profile serial and launch component still identify the private app to open; the single pending authentication request and one-shot launch protections remain unchanged.
 
 The item keeps its original `UserHandle`, component and bitmap. Two namespaced intent extras identify module ownership and the stable user serial. They survive native database serialization and folder/move operations. No separate shortcut database, proxy launch activity, shell launch command or direct database write is used.
 

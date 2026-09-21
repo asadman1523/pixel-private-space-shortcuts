@@ -16,7 +16,7 @@ Nagranie demonstracyjne powstanie po weryfikacji urządzenia. Symulacje nie zast
 
 ## Funkcje
 
-Przytrzymaj aplikację w odblokowanej Przestrzeni prywatnej i wybierz **Dodaj do ekranu głównego** albo przeciągnij ją bezpośrednio na ekran główny. Działa to również w przypadku prywatnych aplikacji w wierszu sugestii na górze listy wszystkich aplikacji. Moduł korzysta z układu, bazy danych, ikon i kłódki Pixel Launcher. Numer seryjny profilu i komponent uruchamiania określają cel oraz zapobiegają duplikatom. Obsługiwane są przenoszenie, foldery i usuwanie.
+Przytrzymaj aplikację w odblokowanej Przestrzeni prywatnej i wybierz **Dodaj do ekranu głównego** albo przeciągnij ją bezpośrednio na ekran główny. Działa to również w przypadku prywatnych aplikacji w wierszu sugestii na górze listy wszystkich aplikacji. Moduł korzysta z układu, bazy danych, ikon i kłódki Pixel Launcher. Numer seryjny profilu i komponent uruchamiania określają cel. Obsługiwane są przenoszenie, foldery i usuwanie.
 
 Po zablokowaniu skrót ma zachować pozycję i wywołać uwierzytelnianie systemowe po dotknięciu. Odblokowany profil otwiera się bezpośrednio. Żądanie wykonywane jest raz, a anulowanie, przekroczenie czasu lub zniszczenie Launchera usuwa je. Nigdy nie uruchamia zastępczo kopii głównej. Zmiany dotyczą tylko elementów modułu; bez widżetów i skrótów wewnątrz aplikacji. Nazwa i ikona pozostają widoczne również po zablokowaniu.
 
@@ -40,7 +40,7 @@ Strona informacyjna ma przycisk **Otwórz LSPosed**. Osobny menedżer otwiera si
 
 ## Użycie
 
-Odblokuj Przestrzeń prywatną, przytrzymaj aplikację i wybierz **Dodaj do ekranu głównego** albo przeciągnij ją na ekran główny. Prywatne aplikacje w wierszu sugestii można dodać w ten sam sposób. Dotknij ikony, aby otworzyć tę samą prywatną kopię; w razie potrzeby uwierzytelnij się w Androidzie. Anulowanie porzuca żądanie. Przytrzymanie ikony pozwala przenosić, dodawać do folderu i usuwać. Ponowna próba dodania wyświetla komunikat o istniejącym skrócie. Aplikacja informacyjna modułu może służyć jako test bez danych wrażliwych w profilu prywatnym.
+Odblokuj Przestrzeń prywatną, przytrzymaj aplikację i wybierz **Dodaj do ekranu głównego** albo przeciągnij ją na ekran główny. Prywatne aplikacje w wierszu sugestii można dodać w ten sam sposób. Dotknij ikony, aby otworzyć tę samą prywatną kopię; w razie potrzeby uwierzytelnij się w Androidzie. Anulowanie porzuca żądanie. Przytrzymanie ikony pozwala przenosić, dodawać do folderu i usuwać. Aplikacja informacyjna modułu może służyć jako test bez danych wrażliwych w profilu prywatnym.
 
 <a id="build"></a>
 
