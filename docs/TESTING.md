@@ -56,7 +56,7 @@ The PASS entries below are historical observations of earlier builds. As of 2026
 | Repeated tapping during device authentication | Pending device test; unit state machine passes |
 | App deletion | Pending device test; uses native cleanup |
 | Profile deletion | Not tested: the owner's existing private profile must not be deleted for a test |
-| Phone reboot | Pending |
+| Phone reboot | Owner reported gray, unclickable shortcuts on 2026-11-13. New Launcher 907 menu entrypoint mismatch confirmed; post-fix reboot test pending. |
 | Grid migration | Pending |
 | Disable module, retain Launcher data | Pending |
 | Demo GIF | Pending verified recording without private content or credentials |
@@ -70,3 +70,13 @@ After adding a shortcut, lock Private Space through its native control. Tap once
 For prediction row testing, verify that a private-profile app appearing in the suggestion row at the top of All Apps can be long-pressed to show "Add to Home screen" and can be dragged to the Home screen. Confirm the resulting shortcut opens the correct private instance.
 
 Reboot, change and restore the grid, and disable/re-enable the module only with the owner's layout preserved. Do not clear Launcher storage. Record only harmless test content; omit authentication credentials entirely. Update each row from observed results before labeling a release stable.
+
+## Launcher 907 compatibility fix — 2026-11-13
+
+The owner's device reported API 37 and Launcher version code 907, but its APK differs from the originally inspected build. LSPosed diagnostics confirmed module initialization failed with `NoSuchElementException`. Read-only inspection of the installed APK confirmed that `PopupContainerWithArrow.populateAndShowRows` is absent, while `addSystemShortcuts(List)` remains. The old required lookup therefore aborted installation before workspace click/authentication hooks were registered.
+
+The correction resolves the supported native SystemShortcut-list entrypoint and makes menu availability independent of workspace hook installation. Lookup failure diagnostics for other required methods now identify the class/method/arity. No launcher database or profile identity is rewritten. The installed loader restores the original Intent, and existing workspace database entries retain the module's ownership and profile-serial extras.
+
+Local unit tests, Android lint and debug assembly passed (21 tests: 15 authentication state-machine tests and 6 popup method resolution tests). The documentation checker passed for all 19 READMEs. The new tests cover old two/three-argument entrypoints, the newer one-argument entrypoint, inherited methods, old-entrypoint preference, and safe rejection of missing/unsupported/Compose-only menus.
+
+The owner authorized replacing the differently signed installed module. The debug module was installed successfully; Launcher data was preserved. LSPosed was re-enabled with only `com.google.android.apps.nexuslauncher` in scope. After restarting Launcher, diagnostics confirmed `Native menu hook: addSystemShortcuts` and `Enabled native adapter for Launcher`, replacing the earlier initialization failure. The owner then confirmed the reported shortcut problem was resolved. This is an owner-confirmed functional result; a separate post-fix full-device reboot, cancellation/one-shot launch retest, and native menu behavior on Compose-only paths were not verified in this session.

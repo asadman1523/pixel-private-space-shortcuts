@@ -45,7 +45,7 @@ class LauncherModule : IXposedHookLoadPackage {
                         log("Enabled native adapter for Launcher")
                     } catch (error: Throwable) {
                         // Installation validates all entrypoints before registering hooks.
-                        log("Adapter initialization failed: ${error.javaClass.simpleName}")
+                        log("Adapter initialization failed: ${error.javaClass.simpleName}: ${error.message}")
                     }
                 }
             })
