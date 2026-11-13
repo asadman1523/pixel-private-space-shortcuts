@@ -21,7 +21,9 @@ Use a private keystore stored outside the repository. Configure these environmen
 | `PPSS_KEY_ALIAS` | Signing alias |
 | `PPSS_KEY_PASSWORD` | Key password |
 
-Run `./gradlew testReleaseUnitTest lintRelease assembleRelease`. Without these variables, release output is unsigned and cannot be installed. Never commit a keystore, password file, raw device dump, or extracted Google APK. Back up the release signing key privately: updates must use the same certificate.
+Run `./gradlew --no-configuration-cache testDebugUnitTest lintRelease assembleRelease`. The current plugin configuration exposes unit tests for debug, not a separate `testReleaseUnitTest` task. Disabling the configuration cache for signed builds avoids persisting signing configuration in it. Without these variables, release output is unsigned and cannot be installed. Never commit a keystore, password file, raw device dump, or extracted Google APK. Back up the release signing key privately: updates must use the same certificate.
+
+Version 0.1.2 starts a new signing lineage. Users of earlier releases or debug builds must reinstall only the module and re-enable its Launcher-only LSPosed scope; do not clear Launcher data. See the [0.1.2 release notes](releases/0.1.2.md) for migration instructions and the new public certificate fingerprint.
 
 ## CI and publishing
 
