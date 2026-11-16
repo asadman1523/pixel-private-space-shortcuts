@@ -50,14 +50,14 @@ class MainActivity : Activity() {
         }
         setContentView(scroll)
         page.addView(label("PIXEL  /  LSPOSED", 12f, primary, true).apply { letterSpacing = 0.12f })
-        page.addView(label(t("私人空間捷徑", "Private Space\nShortcuts"), 32f, ink, true), spaced(14))
+        page.addView(label(getString(R.string.app_name), 32f, ink, true), spaced(14))
         page.addView(label(t("開始使用", "GET STARTED"), 12f, secondary, true), spaced(28))
         val setup = card(surface)
         setup.addView(step("1", t("啟用模組", "Enable the module"), t("在 LSPosed 啟用本模組。", "Enable Private Space Shortcuts in LSPosed.")))
         lateinit var managerButton: TextView
         managerButton = action(t("開啟 LSPosed", "Open LSPosed"), false) { openLsposed(managerButton) }
         setup.addView(managerButton, spaced(12))
-        setup.addView(step("2", t("選擇 Pixel Launcher", "Select Pixel Launcher"), t("作用域只勾選 Pixel Launcher，然後重新啟動桌面。", "Scope only Pixel Launcher, then restart the launcher.")), spaced(22))
+        setup.addView(step("2", t("選擇 Pixel Launcher", "Select Pixel Launcher"), t("在 LSPosed 只勾選 Pixel Launcher，然後重新啟動手機一次。", "In LSPosed, select only Pixel Launcher, then restart your phone.")), spaced(22))
         setup.addView(step("3", t("新增至主畫面", "Add to Home screen"), t("解鎖私人空間 → 長按 App → 新增至主畫面。", "Unlock Private Space → long-press an app → Add to Home screen.")), spaced(22))
         page.addView(setup, spaced(10))
         page.addView(action(t("在 GitHub 查看專案", "View project on GitHub"), true) {

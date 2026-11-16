@@ -23,6 +23,7 @@ import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.XposedHelpers
 import java.lang.ref.WeakReference
 import java.lang.reflect.Method
+import java.lang.reflect.Proxy
 import java.util.Collections
 import java.util.WeakHashMap
 import java.util.function.Consumer
@@ -48,7 +49,8 @@ class Native907(private val app: Application, private val loader: ClassLoader) {
         appInfoClass = cls("model.data.AppInfo")
         shortcutClass = cls("popup.SystemShortcut")
         launcherClass = cls("Launcher")
-        val populate = PopupMenuMethods.resolve(cls("popup.PopupContainerWithArrow"))
+        val popup = cls("popup.PopupContainerWithArrow")
+        val populate = PopupMenuMethods.resolve(popup)
         val shortcutClick = method(cls("popup.SystemShortcut\$Install"), "onClick", 1)
         val click = method(cls("touch.ItemClickHandler\$\$ExternalSyntheticLambda0"), "onClick", 1)
         val addItems = method(cls("model.BgDataModel"), "addItems", 3)
@@ -67,9 +69,12 @@ class Native907(private val app: Application, private val loader: ClassLoader) {
             if (populate != null) {
                 hook(populate, before = { p -> addMenuEntry(p) })
                 LauncherModule.log("Native menu hook: ${populate.name}")
-            } else {
-                // Menu changes must not disable authentication for existing workspace icons.
-                LauncherModule.log("Native menu entry unavailable; workspace hooks remain enabled")
+            }
+            // New Launcher builds render the private app menu through Compose.
+            // An unavailable menu adapter must not disable existing workspace shortcuts.
+            val compose = installComposeMenu(popup)
+            if (populate == null && !compose) {
+                LauncherModule.log("Menu entry unavailable; workspace hooks remain enabled")
             }
             hook(shortcutClick, before = { p ->
                 val item = field(p.thisObject, "mItemInfo")
@@ -132,23 +137,70 @@ class Native907(private val app: Application, private val loader: ClassLoader) {
     }
 
     private fun addMenuEntry(p: XC_MethodHook.MethodHookParam) {
-        val item = field(p.thisObject, "itemInfo") ?: return
-        val copy = ownedCopy(item) ?: return
-        val key = ownedKey(copy) ?: return
-        val target = field(p.thisObject, "mActivityContext") ?: return
         val view = field(p.thisObject, "originalView") as? View ?: return
-        val factory = XposedHelpers.getStaticObjectField(shortcutClass, "ADD_TO_HOME_SCREEN")
-        val native = call(factory, "getShortcut", target, copy, view) ?: return
-        // Validated entrypoints all receive their SystemShortcut list as the last argument.
-        // This includes addSystemShortcuts(List) on newer Launcher 907 builds.
-        val listIndex = p.args.lastIndex
-        @Suppress("UNCHECKED_CAST")
-        val rows = (p.args[listIndex] as List<Any>).toMutableList()
+        val native = createAddAction(p.thisObject, view) ?: return
+        val key = ownedKey(field(native, "mItemInfo")) ?: return
+        // Legacy entrypoints receive a SystemShortcut list as their last argument.
+        val index = p.args.lastIndex
+        val rows = p.args[index] as List<*>
         if (rows.none { it in addActions && ownedKey(field(it, "mItemInfo")) == key }) {
             addActions.add(native)
-            rows.add(native)
-            p.args[listIndex] = rows
+            p.args[index] = rows + native
         }
+    }
+
+    private fun installComposeMenu(popup: Class<*>): Boolean {
+        try {
+            val show = popup.getDeclaredMethod("showComposePopup", Int::class.javaPrimitiveType, List::class.java)
+            val item = cls("popup.ui.PopupItem")
+            val actionType = item.getDeclaredField("popupAction").type
+            check(actionType.isInterface && actionType.getMethod("invoke").returnType == Any::class.java)
+            val category = cls("popup.PopupCategory")
+            val row = item.getConstructor(
+                Int::class.javaPrimitiveType, cls("popup.ui.StringContainer"), actionType, category,
+            )
+            val systemShortcut = XposedHelpers.getStaticObjectField(category, "SYSTEM_SHORTCUT")
+            val fixedShortcut = XposedHelpers.getStaticObjectField(category, "SYSTEM_SHORTCUT_FIXED")
+            hook(show, before = { p ->
+                val view = field(p.thisObject, "originalView") as? View ?: return@hook
+                val native = createAddAction(p.thisObject, view) ?: return@hook
+                val label = call(native, "getLabel") ?: return@hook
+                val icon = call(native, "getIconResId") as Int
+                val action = Proxy.newProxyInstance(actionType.classLoader, arrayOf(actionType)) { proxy, method, args ->
+                    when (method.name) {
+                        "invoke" -> {
+                            // The Launcher click dispatcher discards the callback result.
+                            guarded { call(native, "onClick", view) }
+                            null
+                        }
+                        "equals" -> proxy === args?.get(0)
+                        "hashCode" -> System.identityHashCode(proxy)
+                        "toString" -> "Private Space Add to Home screen"
+                        else -> error("Unexpected popup callback: ${method.name}")
+                    }
+                }
+                val kind = if (XposedHelpers.getBooleanField(native, "mIsCollapsible")) fixedShortcut else systemShortcut
+                val entry = row.newInstance(icon, label, action, kind)
+                val rows = p.args[1] as List<*>
+                addActions.add(native)
+                p.args[1] = rows.filterNot { item.isInstance(it) && field(it, "label") == label } + entry
+            })
+            LauncherModule.log("Compose menu hook: ${show.name}")
+            return true
+        } catch (_: NoSuchMethodException) {
+            return false
+        } catch (error: Throwable) {
+            LauncherModule.log("Compose menu unavailable: ${error.javaClass.simpleName}")
+            return false
+        }
+    }
+
+    private fun createAddAction(popup: Any, view: View): Any? {
+        val item = field(popup, "itemInfo") ?: return null
+        val copy = ownedCopy(item) ?: return null
+        val target = field(popup, "mActivityContext") ?: return null
+        val factory = XposedHelpers.getStaticObjectField(shortcutClass, "ADD_TO_HOME_SCREEN")
+        return call(factory, "getShortcut", target, copy, view)
     }
 
     private fun ownedCopy(item: Any): Any? {
