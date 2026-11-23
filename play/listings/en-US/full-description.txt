@@ -1,0 +1,5 @@
+PPS (Private Space Shortcuts) lets you open the private copy of an app from your Home screen. Unlock Private Space, press and hold the app, then choose “Add to Home screen.” Its icon remains visible on your Home screen when Private Space is locked. Tapping it opens Android’s authentication prompt. Canceling leaves the app closed.
+
+You need a rooted phone with Android Private Space, a working LSPosed installation, and a compatible version of Pixel Launcher. Enable PPS in LSPosed, select only Pixel Launcher, and restart your phone. The launcher integration has been tested on Android 17. Compatibility can change with launcher updates.
+
+PPS is an independent open-source project. Google and the LSPosed project do not develop, sponsor, or endorse PPS.

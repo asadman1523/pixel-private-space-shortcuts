@@ -49,7 +49,6 @@ class MainActivity : Activity() {
             }
         }
         setContentView(scroll)
-        page.addView(label("PIXEL  /  LSPOSED", 12f, primary, true).apply { letterSpacing = 0.12f })
         page.addView(label(getString(R.string.app_name), 32f, ink, true), spaced(14))
         page.addView(label(t("開始使用", "GET STARTED"), 12f, secondary, true), spaced(28))
         val setup = card(surface)

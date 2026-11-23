@@ -4,7 +4,7 @@ android {
     namespace = "io.github.asadman1523.privatespaceshortcuts"
     compileSdk = 37
     defaultConfig {
-        applicationId = "io.github.asadman1523.privatespaceshortcuts"
+        applicationId = "io.github.asadman1523.pps"
         minSdk = 35
         targetSdk = 37
         versionCode = 9

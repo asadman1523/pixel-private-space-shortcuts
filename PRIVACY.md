@@ -1,8 +1,8 @@
 # Privacy Policy
 
-Last updated: September 19, 2026
+Last updated: November 23, 2026
 
-This policy describes how Pixel Private Space Shortcuts (Android package `com.jackwu.privatespaceshortcuts`), maintained in the [project repository](https://github.com/asadman1523/pixel-private-space-shortcuts), handles information. It applies to the app and its LSPosed module as distributed by this project.
+This policy describes how PPS (Private Space Shortcuts, Android package `io.github.asadman1523.pps`), maintained in the [project repository](https://github.com/asadman1523/pixel-private-space-shortcuts), handles information. It applies to the app and its LSPosed module as distributed by this project.
 
 ## Overview
 
