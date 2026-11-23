@@ -1,10 +1,12 @@
-# Pixel Private Space Shortcuts
+# PPS
+
+> [Yangi PPS paketi va unga o‘tish bo‘yicha ko‘rsatmalar](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
 
 LSPosed orqali Pixel Maxfiy makon ilovalari uchun asl bosh ekran yorliqlari.
 
 [![Build](https://img.shields.io/github/actions/workflow/status/asadman1523/pixel-private-space-shortcuts/build.yml?branch=main&style=flat&logo=githubactions&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/actions/workflows/build.yml)
-[![Release](https://img.shields.io/github/v/release/asadman1523/pixel-private-space-shortcuts?include_prereleases&style=flat&logo=github&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/releases)
-[![Downloads](https://img.shields.io/github/downloads/asadman1523/pixel-private-space-shortcuts/total?style=flat&logo=github&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/releases)
+[![Release](https://img.shields.io/github/v/release/Xposed-Modules-Repo/io.github.asadman1523.pps?include_prereleases&style=flat&logo=github&logoColor=white)](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases)
+[![Downloads](https://img.shields.io/github/downloads/Xposed-Modules-Repo/io.github.asadman1523.pps/total?style=flat&logo=github&logoColor=white)](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases)
 [![Android](https://img.shields.io/badge/Android-17%20%2F%20API%2037%20experimental-orange?style=flat&logo=android&logoColor=white)](#compatibility)
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=flat&logo=apache&logoColor=white)](../../LICENSE)
 
@@ -32,7 +34,7 @@ Qulflangan yorliqlar asl rang va qulf nishonini saqlaydi. Ma’lumot sahifasi do
 
 ## O‘rnatish
 
-[Relizlar](https://github.com/asadman1523/pixel-private-space-shortcuts/releases) APK faylini asosiy profilga o‘rnating. LSPosed’da **Pixel Private Space Shortcuts** ni yoqing, faqat `com.google.android.apps.nexuslauncher` ni tanlang va Launcher yoki telefonni qayta ishga tushiring. CI debug APK fayllari sinov uchun, imzosi farq qilishi mumkin.
+[Relizlar](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases/latest) APK faylini asosiy profilga o‘rnating. LSPosed’da **PPS** ni yoqing, faqat `com.google.android.apps.nexuslauncher` ni tanlang va Launcher yoki telefonni qayta ishga tushiring. CI debug APK fayllari sinov uchun, imzosi farq qilishi mumkin.
 
 Sahifada **LSPosed’ni ochish** tugmasi bor. Alohida menejer bevosita ochiladi; ichki menejer birinchi safar Magisk ruxsatini so‘raydi. Ruxsat faqat shu tugma bosilganda ishlatiladi, maxfiy ilovalarni ochishda emas.
 

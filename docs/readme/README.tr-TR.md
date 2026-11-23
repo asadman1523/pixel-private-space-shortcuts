@@ -1,10 +1,12 @@
-# Pixel Private Space Shortcuts
+# PPS
+
+> [Yeni PPS paketi ve geçiş talimatları](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
 
 LSPosed ile Pixel Özel Alan uygulamaları için yerel ana ekran kısayolları.
 
 [![Build](https://img.shields.io/github/actions/workflow/status/asadman1523/pixel-private-space-shortcuts/build.yml?branch=main&style=flat&logo=githubactions&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/actions/workflows/build.yml)
-[![Release](https://img.shields.io/github/v/release/asadman1523/pixel-private-space-shortcuts?include_prereleases&style=flat&logo=github&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/releases)
-[![Downloads](https://img.shields.io/github/downloads/asadman1523/pixel-private-space-shortcuts/total?style=flat&logo=github&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/releases)
+[![Release](https://img.shields.io/github/v/release/Xposed-Modules-Repo/io.github.asadman1523.pps?include_prereleases&style=flat&logo=github&logoColor=white)](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases)
+[![Downloads](https://img.shields.io/github/downloads/Xposed-Modules-Repo/io.github.asadman1523.pps/total?style=flat&logo=github&logoColor=white)](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases)
 [![Android](https://img.shields.io/badge/Android-17%20%2F%20API%2037%20experimental-orange?style=flat&logo=android&logoColor=white)](#compatibility)
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=flat&logo=apache&logoColor=white)](../../LICENSE)
 
@@ -32,7 +34,7 @@ Kilitli kısayollar özgün renklerini ve yerel kilit rozetini korur. Bilgi sayf
 
 ## Kurulum
 
-[Sürümler](https://github.com/asadman1523/pixel-private-space-shortcuts/releases) sayfasındaki APK’yi ana profile kurun. LSPosed’de **Pixel Private Space Shortcuts** modülünü etkinleştirip yalnızca `com.google.android.apps.nexuslauncher` seçin, Launcher’ı veya telefonu yeniden başlatın. CI debug APK’leri test içindir ve farklı imza kullanabilir.
+[Sürümler](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases/latest) sayfasındaki APK’yi ana profile kurun. LSPosed’de **PPS** modülünü etkinleştirip yalnızca `com.google.android.apps.nexuslauncher` seçin, Launcher’ı veya telefonu yeniden başlatın. CI debug APK’leri test içindir ve farklı imza kullanabilir.
 
 Bilgi sayfasında **LSPosed’i aç** düğmesi bulunur. Bağımsız yönetici doğrudan açılır; yerleşik yönetici ilk kullanımda Magisk izni ister. İzin yalnızca bu düğmede kullanılır, özel uygulamaları açmak için kullanılmaz.
 

@@ -1,10 +1,12 @@
-# Pixel Private Space Shortcuts
+# PPS
+
+> [새 PPS 패키지 및 이전 방법](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
 
 LSPosed로 Pixel 비공개 공간 앱의 기본 홈 화면 바로가기를 만듭니다.
 
 [![Build](https://img.shields.io/github/actions/workflow/status/asadman1523/pixel-private-space-shortcuts/build.yml?branch=main&style=flat&logo=githubactions&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/actions/workflows/build.yml)
-[![Release](https://img.shields.io/github/v/release/asadman1523/pixel-private-space-shortcuts?include_prereleases&style=flat&logo=github&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/releases)
-[![Downloads](https://img.shields.io/github/downloads/asadman1523/pixel-private-space-shortcuts/total?style=flat&logo=github&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/releases)
+[![Release](https://img.shields.io/github/v/release/Xposed-Modules-Repo/io.github.asadman1523.pps?include_prereleases&style=flat&logo=github&logoColor=white)](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases)
+[![Downloads](https://img.shields.io/github/downloads/Xposed-Modules-Repo/io.github.asadman1523.pps/total?style=flat&logo=github&logoColor=white)](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases)
 [![Android](https://img.shields.io/badge/Android-17%20%2F%20API%2037%20experimental-orange?style=flat&logo=android&logoColor=white)](#compatibility)
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=flat&logo=apache&logoColor=white)](../../LICENSE)
 
@@ -32,7 +34,7 @@ Read this in other languages: [English](../../README.md), [简体中文](README.
 
 ## 설치
 
-[Releases](https://github.com/asadman1523/pixel-private-space-shortcuts/releases)의 APK를 기본 프로필에 설치합니다. LSPosed에서 **Pixel Private Space Shortcuts**를 켜고 범위를 `com.google.android.apps.nexuslauncher`만 선택한 뒤 Launcher나 기기를 재시작합니다. CI debug APK는 테스트용이며 서명 키가 다를 수 있습니다.
+[Releases](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases/latest)의 APK를 기본 프로필에 설치합니다. LSPosed에서 **PPS**를 켜고 범위를 `com.google.android.apps.nexuslauncher`만 선택한 뒤 Launcher나 기기를 재시작합니다. CI debug APK는 테스트용이며 서명 키가 다를 수 있습니다.
 
 안내 페이지에 **LSPosed 열기** 버튼이 있습니다. 별도 관리자는 바로 열리며 내장 관리자는 처음에 Magisk 승인이 필요합니다. 이 권한은 버튼을 누를 때만 사용하고 비공개 앱 실행에는 사용하지 않습니다.
 

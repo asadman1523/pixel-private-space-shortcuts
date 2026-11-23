@@ -1,10 +1,12 @@
-# Pixel Private Space Shortcuts
+# PPS
+
+> [Новий пакет PPS та інструкція з переходу](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
 
 Нативні ярлики застосунків приватного простору Pixel на головному екрані за допомогою LSPosed.
 
 [![Build](https://img.shields.io/github/actions/workflow/status/asadman1523/pixel-private-space-shortcuts/build.yml?branch=main&style=flat&logo=githubactions&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/actions/workflows/build.yml)
-[![Release](https://img.shields.io/github/v/release/asadman1523/pixel-private-space-shortcuts?include_prereleases&style=flat&logo=github&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/releases)
-[![Downloads](https://img.shields.io/github/downloads/asadman1523/pixel-private-space-shortcuts/total?style=flat&logo=github&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/releases)
+[![Release](https://img.shields.io/github/v/release/Xposed-Modules-Repo/io.github.asadman1523.pps?include_prereleases&style=flat&logo=github&logoColor=white)](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases)
+[![Downloads](https://img.shields.io/github/downloads/Xposed-Modules-Repo/io.github.asadman1523.pps/total?style=flat&logo=github&logoColor=white)](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases)
 [![Android](https://img.shields.io/badge/Android-17%20%2F%20API%2037%20experimental-orange?style=flat&logo=android&logoColor=white)](#compatibility)
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=flat&logo=apache&logoColor=white)](../../LICENSE)
 
@@ -32,7 +34,7 @@ Read this in other languages: [English](../../README.md), [简体中文](README.
 
 ## Встановлення
 
-Встановіть APK із [випусків](https://github.com/asadman1523/pixel-private-space-shortcuts/releases) в основний профіль. У LSPosed увімкніть **Pixel Private Space Shortcuts**, виберіть лише `com.google.android.apps.nexuslauncher`, перезапустіть Launcher або телефон. Тестові debug APK з CI можуть мати інший підпис.
+Встановіть APK із [випусків](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases/latest) в основний профіль. У LSPosed увімкніть **PPS**, виберіть лише `com.google.android.apps.nexuslauncher`, перезапустіть Launcher або телефон. Тестові debug APK з CI можуть мати інший підпис.
 
 Сторінка має кнопку **Відкрити LSPosed**. Окремий менеджер відкривається безпосередньо; вбудований уперше потребує дозволу Magisk. Дозвіл використовується лише для цієї кнопки, не для запуску приватних застосунків.
 

@@ -1,10 +1,12 @@
-# Pixel Private Space Shortcuts
+# PPS
+
+> [Gói PPS mới và hướng dẫn chuyển đổi](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
 
 Lối tắt màn hình chính gốc cho ứng dụng Không gian riêng tư trên Pixel, thông qua LSPosed.
 
 [![Build](https://img.shields.io/github/actions/workflow/status/asadman1523/pixel-private-space-shortcuts/build.yml?branch=main&style=flat&logo=githubactions&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/actions/workflows/build.yml)
-[![Release](https://img.shields.io/github/v/release/asadman1523/pixel-private-space-shortcuts?include_prereleases&style=flat&logo=github&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/releases)
-[![Downloads](https://img.shields.io/github/downloads/asadman1523/pixel-private-space-shortcuts/total?style=flat&logo=github&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/releases)
+[![Release](https://img.shields.io/github/v/release/Xposed-Modules-Repo/io.github.asadman1523.pps?include_prereleases&style=flat&logo=github&logoColor=white)](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases)
+[![Downloads](https://img.shields.io/github/downloads/Xposed-Modules-Repo/io.github.asadman1523.pps/total?style=flat&logo=github&logoColor=white)](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases)
 [![Android](https://img.shields.io/badge/Android-17%20%2F%20API%2037%20experimental-orange?style=flat&logo=android&logoColor=white)](#compatibility)
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=flat&logo=apache&logoColor=white)](../../LICENSE)
 
@@ -32,7 +34,7 @@ Lối tắt bị khóa giữ màu gốc và dấu khóa gốc. Trang thông tin 
 
 ## Cài đặt
 
-Cài APK từ [bản phát hành](https://github.com/asadman1523/pixel-private-space-shortcuts/releases) vào hồ sơ chính. Bật **Pixel Private Space Shortcuts** trong LSPosed, chỉ chọn `com.google.android.apps.nexuslauncher`, rồi khởi động lại Launcher hoặc điện thoại. APK debug từ CI dùng để thử nghiệm và có thể mang chữ ký khác.
+Cài APK từ [bản phát hành](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases/latest) vào hồ sơ chính. Bật **PPS** trong LSPosed, chỉ chọn `com.google.android.apps.nexuslauncher`, rồi khởi động lại Launcher hoặc điện thoại. APK debug từ CI dùng để thử nghiệm và có thể mang chữ ký khác.
 
 Trang có nút **Mở LSPosed**. Trình quản lý độc lập mở trực tiếp; bản tích hợp cần cấp quyền Magisk lần đầu. Quyền chỉ dùng khi nhấn nút này, không dùng để mở ứng dụng riêng tư.
 

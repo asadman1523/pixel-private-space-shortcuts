@@ -1,10 +1,12 @@
-# Pixel Private Space Shortcuts
+# PPS
+
+> [PPS 新软件包与迁移说明](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
 
 通过 LSPosed，将 Pixel 私密空间应用添加到原生主屏幕。
 
 [![Build](https://img.shields.io/github/actions/workflow/status/asadman1523/pixel-private-space-shortcuts/build.yml?branch=main&style=flat&logo=githubactions&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/actions/workflows/build.yml)
-[![Release](https://img.shields.io/github/v/release/asadman1523/pixel-private-space-shortcuts?include_prereleases&style=flat&logo=github&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/releases)
-[![Downloads](https://img.shields.io/github/downloads/asadman1523/pixel-private-space-shortcuts/total?style=flat&logo=github&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/releases)
+[![Release](https://img.shields.io/github/v/release/Xposed-Modules-Repo/io.github.asadman1523.pps?include_prereleases&style=flat&logo=github&logoColor=white)](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases)
+[![Downloads](https://img.shields.io/github/downloads/Xposed-Modules-Repo/io.github.asadman1523.pps/total?style=flat&logo=github&logoColor=white)](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases)
 [![Android](https://img.shields.io/badge/Android-17%20%2F%20API%2037%20experimental-orange?style=flat&logo=android&logoColor=white)](#compatibility)
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=flat&logo=apache&logoColor=white)](../../LICENSE)
 
@@ -34,7 +36,7 @@ Read this in other languages: [English](../../README.md), **简体中文**, [繁
 
 ## 安装
 
-从 [Releases](https://github.com/asadman1523/pixel-private-space-shortcuts/releases) 下载 APK 并安装到主空间。在 LSPosed 启用 **Pixel Private Space Shortcuts**，作用域仅选择 `com.google.android.apps.nexuslauncher`，然后重启 Launcher 或手机。CI debug APK 是测试产物，签名可能不同。
+从 [Releases](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases/latest) 下载 APK 并安装到主空间。在 LSPosed 启用 **PPS**，作用域仅选择 `com.google.android.apps.nexuslauncher`，然后重启 Launcher 或手机。CI debug APK 是测试产物，签名可能不同。
 
 说明页面提供“打开 LSPosed”按钮。独立管理器可直接打开；内置管理器首次使用需要 Magisk 授权。此权限仅在点击该按钮时使用，不用于打开私密应用。
 

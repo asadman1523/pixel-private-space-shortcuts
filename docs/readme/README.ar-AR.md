@@ -1,10 +1,12 @@
-# Pixel Private Space Shortcuts
+# PPS
+
+> [حزمة PPS الجديدة وتعليمات الانتقال](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
 
 اختصارات أصلية على الشاشة الرئيسية لتطبيقات المساحة الخاصة في Pixel باستخدام LSPosed.
 
 [![Build](https://img.shields.io/github/actions/workflow/status/asadman1523/pixel-private-space-shortcuts/build.yml?branch=main&style=flat&logo=githubactions&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/actions/workflows/build.yml)
-[![Release](https://img.shields.io/github/v/release/asadman1523/pixel-private-space-shortcuts?include_prereleases&style=flat&logo=github&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/releases)
-[![Downloads](https://img.shields.io/github/downloads/asadman1523/pixel-private-space-shortcuts/total?style=flat&logo=github&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/releases)
+[![Release](https://img.shields.io/github/v/release/Xposed-Modules-Repo/io.github.asadman1523.pps?include_prereleases&style=flat&logo=github&logoColor=white)](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases)
+[![Downloads](https://img.shields.io/github/downloads/Xposed-Modules-Repo/io.github.asadman1523.pps/total?style=flat&logo=github&logoColor=white)](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases)
 [![Android](https://img.shields.io/badge/Android-17%20%2F%20API%2037%20experimental-orange?style=flat&logo=android&logoColor=white)](#compatibility)
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=flat&logo=apache&logoColor=white)](../../LICENSE)
 
@@ -32,7 +34,7 @@ Read this in other languages: [English](../../README.md), [简体中文](README.
 
 ## التثبيت
 
-ثبّت APK من [الإصدارات](https://github.com/asadman1523/pixel-private-space-shortcuts/releases) في الملف الرئيسي. فعّل **Pixel Private Space Shortcuts** في LSPosed وحدد `com.google.android.apps.nexuslauncher` فقط ثم أعد تشغيل Launcher أو الهاتف. ملفات debug من CI للاختبار وقد تحمل توقيعاً مختلفاً.
+ثبّت APK من [الإصدارات](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases/latest) في الملف الرئيسي. فعّل **PPS** في LSPosed وحدد `com.google.android.apps.nexuslauncher` فقط ثم أعد تشغيل Launcher أو الهاتف. ملفات debug من CI للاختبار وقد تحمل توقيعاً مختلفاً.
 
 تتضمن الصفحة زر **فتح LSPosed**. يفتح المدير المستقل مباشرة؛ يحتاج المدير المدمج إلى إذن Magisk أول مرة. يُستخدم الإذن عند الضغط على هذا الزر فقط، وليس لفتح التطبيقات الخاصة.
 

@@ -1,10 +1,12 @@
-# Pixel Private Space Shortcuts
+# PPS
+
+> [Nouveau paquet PPS et instructions de migration](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
 
 Des raccourcis natifs sur l’écran d’accueil pour les applications de l’Espace privé Pixel, avec LSPosed.
 
 [![Build](https://img.shields.io/github/actions/workflow/status/asadman1523/pixel-private-space-shortcuts/build.yml?branch=main&style=flat&logo=githubactions&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/actions/workflows/build.yml)
-[![Release](https://img.shields.io/github/v/release/asadman1523/pixel-private-space-shortcuts?include_prereleases&style=flat&logo=github&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/releases)
-[![Downloads](https://img.shields.io/github/downloads/asadman1523/pixel-private-space-shortcuts/total?style=flat&logo=github&logoColor=white)](https://github.com/asadman1523/pixel-private-space-shortcuts/releases)
+[![Release](https://img.shields.io/github/v/release/Xposed-Modules-Repo/io.github.asadman1523.pps?include_prereleases&style=flat&logo=github&logoColor=white)](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases)
+[![Downloads](https://img.shields.io/github/downloads/Xposed-Modules-Repo/io.github.asadman1523.pps/total?style=flat&logo=github&logoColor=white)](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases)
 [![Android](https://img.shields.io/badge/Android-17%20%2F%20API%2037%20experimental-orange?style=flat&logo=android&logoColor=white)](#compatibility)
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=flat&logo=apache&logoColor=white)](../../LICENSE)
 
@@ -32,7 +34,7 @@ Les raccourcis verrouillés gardent leurs couleurs et leur cadenas natif. La pag
 
 ## Installation
 
-Installez l’APK des [versions publiées](https://github.com/asadman1523/pixel-private-space-shortcuts/releases) dans le profil principal. Activez **Pixel Private Space Shortcuts** dans LSPosed, sélectionnez uniquement `com.google.android.apps.nexuslauncher`, puis redémarrez le Launcher ou le téléphone. Les APK debug de CI sont destinés aux tests et peuvent avoir une autre signature.
+Installez l’APK des [versions publiées](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps/releases/latest) dans le profil principal. Activez **PPS** dans LSPosed, sélectionnez uniquement `com.google.android.apps.nexuslauncher`, puis redémarrez le Launcher ou le téléphone. Les APK debug de CI sont destinés aux tests et peuvent avoir une autre signature.
 
 La page propose **Ouvrir LSPosed**. Le gestionnaire autonome s’ouvre directement ; le gestionnaire intégré demande une autorisation Magisk initiale. Cette permission sert uniquement à ce bouton, pas au lancement des applications privées.
 
