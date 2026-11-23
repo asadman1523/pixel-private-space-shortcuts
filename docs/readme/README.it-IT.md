@@ -1,4 +1,4 @@
-# [Nuovo pacchetto PPS e istruzioni per la migrazione](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
+# [Nuovo repository PPS](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps)
 
 ## PPS
 

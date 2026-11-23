@@ -1,4 +1,4 @@
-# [Yangi PPS paketi va unga o‘tish bo‘yicha ko‘rsatmalar](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
+# [Yangi PPS repozitori](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps)
 
 ## PPS
 

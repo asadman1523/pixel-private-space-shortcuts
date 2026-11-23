@@ -1,4 +1,4 @@
-# [Gói PPS mới và hướng dẫn chuyển đổi](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
+# [Kho mã PPS mới](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps)
 
 ## PPS
 

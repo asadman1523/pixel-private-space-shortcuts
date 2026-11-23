@@ -1,4 +1,4 @@
-# [새 PPS 패키지 및 이전 방법](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
+# [새 PPS 저장소](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps)
 
 ## PPS
 

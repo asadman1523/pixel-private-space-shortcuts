@@ -1,4 +1,4 @@
-# [PPS 新套件與遷移說明](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
+# [新版 PPS 倉庫](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps)
 
 ## PPS
 
