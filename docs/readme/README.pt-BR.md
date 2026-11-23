@@ -1,6 +1,6 @@
-# PPS
+# [Novo pacote PPS e instruções de migração](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
 
-> [Novo pacote PPS e instruções de migração](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
+## PPS
 
 Atalhos nativos na tela inicial para apps do Espaço privado do Pixel, com LSPosed.
 

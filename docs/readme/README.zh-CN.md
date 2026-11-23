@@ -1,6 +1,6 @@
-# PPS
+# [PPS 新软件包与迁移说明](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
 
-> [PPS 新软件包与迁移说明](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
+## PPS
 
 通过 LSPosed，将 Pixel 私密空间应用添加到原生主屏幕。
 

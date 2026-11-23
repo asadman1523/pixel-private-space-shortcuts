@@ -1,6 +1,6 @@
-# PPS
+# [New PPS package and migration instructions](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
 
-> [New PPS package and migration instructions](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
+## PPS
 
 Native Home screen shortcuts for Pixel Private Space apps, powered by LSPosed.
 

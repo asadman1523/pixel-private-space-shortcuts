@@ -1,6 +1,6 @@
-# PPS
+# [Gói PPS mới và hướng dẫn chuyển đổi](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
 
-> [Gói PPS mới và hướng dẫn chuyển đổi](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
+## PPS
 
 Lối tắt màn hình chính gốc cho ứng dụng Không gian riêng tư trên Pixel, thông qua LSPosed.
 

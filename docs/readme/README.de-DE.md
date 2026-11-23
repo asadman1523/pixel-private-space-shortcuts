@@ -1,6 +1,6 @@
-# PPS
+# [Neues PPS-Paket und Anleitung zum Umstieg](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
 
-> [Neues PPS-Paket und Anleitung zum Umstieg](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
+## PPS
 
 Native Startbildschirm-Verknüpfungen für Apps im privaten Bereich von Pixel, mit LSPosed.
 

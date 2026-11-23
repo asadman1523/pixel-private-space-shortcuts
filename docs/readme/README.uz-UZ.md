@@ -1,6 +1,6 @@
-# PPS
+# [Yangi PPS paketi va unga o‘tish bo‘yicha ko‘rsatmalar](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
 
-> [Yangi PPS paketi va unga o‘tish bo‘yicha ko‘rsatmalar](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
+## PPS
 
 LSPosed orqali Pixel Maxfiy makon ilovalari uchun asl bosh ekran yorliqlari.
 

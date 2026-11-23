@@ -1,6 +1,6 @@
-# PPS
+# [حزمة PPS الجديدة وتعليمات الانتقال](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
 
-> [حزمة PPS الجديدة وتعليمات الانتقال](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
+## PPS
 
 اختصارات أصلية على الشاشة الرئيسية لتطبيقات المساحة الخاصة في Pixel باستخدام LSPosed.
 

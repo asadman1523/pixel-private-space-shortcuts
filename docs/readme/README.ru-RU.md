@@ -1,6 +1,6 @@
-# PPS
+# [Новый пакет PPS и инструкция по переходу](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
 
-> [Новый пакет PPS и инструкция по переходу](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
+## PPS
 
 Нативные ярлыки приложений личного пространства Pixel на главном экране через LSPosed.
 

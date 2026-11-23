@@ -1,6 +1,6 @@
-# PPS
+# [חבילת PPS החדשה והוראות מעבר](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
 
-> [חבילת PPS החדשה והוראות מעבר](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
+## PPS
 
 קיצורי דרך מקוריים במסך הבית לאפליקציות המרחב הפרטי ב־Pixel, באמצעות LSPosed.
 

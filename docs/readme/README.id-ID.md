@@ -1,6 +1,6 @@
-# PPS
+# [Paket PPS baru dan petunjuk migrasi](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
 
-> [Paket PPS baru dan petunjuk migrasi](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
+## PPS
 
 Pintasan layar utama asli untuk aplikasi Ruang Pribadi Pixel melalui LSPosed.
 

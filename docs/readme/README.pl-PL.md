@@ -1,6 +1,6 @@
-# PPS
+# [Nowy pakiet PPS i instrukcja migracji](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
 
-> [Nowy pakiet PPS i instrukcja migracji](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
+## PPS
 
 Natywne skróty aplikacji Przestrzeni prywatnej Pixel na ekranie głównym dzięki LSPosed.
 

@@ -1,6 +1,6 @@
-# PPS
+# [PPS の新しいパッケージと移行手順](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
 
-> [PPS の新しいパッケージと移行手順](https://github.com/Xposed-Modules-Repo/io.github.asadman1523.pps#installing-or-migrating)
+## PPS
 
 LSPosed を使用し、Pixel のプライベートスペースのアプリを標準ホーム画面に追加します。
 
