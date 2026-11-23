@@ -7,8 +7,8 @@ android {
         applicationId = "io.github.asadman1523.pps"
         minSdk = 35
         targetSdk = 37
-        versionCode = 9
-        versionName = "0.1.3"
+        versionCode = 10
+        versionName = "0.1.4"
     }
     buildFeatures { buildConfig = true }
     compileOptions {
