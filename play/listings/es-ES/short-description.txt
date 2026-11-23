@@ -1,0 +1,1 @@
+Añade apps del espacio privado a la pantalla de inicio en móviles con root.

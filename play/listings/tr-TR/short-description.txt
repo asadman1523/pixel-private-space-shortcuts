@@ -1,0 +1,1 @@
+Root erişimli uyumlu telefonlarda Özel Alan uygulamalarını ana ekrana ekleyin.

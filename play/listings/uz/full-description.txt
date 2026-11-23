@@ -1,0 +1,5 @@
+PPS (Private Space Shortcuts) ilovaning shaxsiy makondagi nusxasini bevosita bosh ekrandan ochish imkonini beradi. Shaxsiy makon qulfini oching, ilova belgisini bosib turing va «Bosh ekranga qo‘shish» bandini tanlang. Shaxsiy makon qulflanganda ham belgi bosh ekranda ko‘rinib turadi. Uni bossangiz, Android shaxsingizni tasdiqlashingizni so‘raydi. So‘rovni bekor qilsangiz, ilova yopiq qoladi.
+
+Telefoningizda root huquqlari va Android shaxsiy makoni bo‘lishi kerak. Shuningdek, LSPosed o‘rnatilgan va faol bo‘lishi, Pixel Launcher versiyasi esa mos kelishi zarur. LSPosed’da PPS’ni yoqing, faqat Pixel Launcher’ni tanlang va telefonni qayta ishga tushiring. Modulning Pixel Launcher bilan ishlashi Android 17 da sinovdan o‘tgan. Pixel Launcher yangilanganda moslik o‘zgarishi mumkin.
+
+PPS — ochiq manbali mustaqil loyiha. Google va LSPosed loyihasi PPS’ni ishlab chiqmaydi, unga homiylik qilmaydi va uni rasman qo‘llab-quvvatlamaydi.

@@ -1,0 +1,5 @@
+PPS（Private Space Shortcuts）让你可以从主屏幕直接打开安装在隐私空间中的应用。解锁隐私空间，长按应用，然后选择“添加到主屏幕”。隐私空间锁定后，应用图标仍会显示在主屏幕上。点按图标时，Android 会提示你验证身份。如果取消验证，应用就不会打开。
+
+你需要一部已获取 root 权限并设置了 Android 隐私空间的手机，还需安装可正常运行的 LSPosed 和兼容版本的 Pixel Launcher。在 LSPosed 中启用 PPS，仅勾选 Pixel Launcher，然后重启手机。启动器集成功能已在 Android 17 上测试。启动器更新后，兼容性可能会发生变化。
+
+PPS 是一个独立的开源项目。Google 和 LSPosed 项目均未参与 PPS 的开发，也未赞助或认可 PPS。

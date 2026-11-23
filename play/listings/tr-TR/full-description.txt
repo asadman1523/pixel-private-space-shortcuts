@@ -1,0 +1,5 @@
+PPS (Private Space Shortcuts) ile bir uygulamanın Özel Alan’da yüklü olan kopyasını ana ekrandan açabilirsiniz. Özel Alan’ın kilidini açın, uygulamaya uzun basın ve “Ana ekrana ekle” seçeneğine dokunun. Özel Alan kilitliyken de uygulamanın simgesi ana ekranda görünür. Simgeye dokunduğunuzda Android’in kimlik doğrulama ekranı açılır. Kimlik doğrulamayı iptal ederseniz uygulama açılmaz.
+
+Android’in Özel Alan özelliği kurulu, root erişimli bir telefona, çalışan bir LSPosed kurulumuna ve uyumlu bir Pixel Launcher sürümüne ihtiyacınız vardır. LSPosed’de PPS’yi etkinleştirin, yalnızca Pixel Launcher’ı seçin ve telefonu yeniden başlatın. Başlatıcıyla entegrasyon Android 17’de test edilmiştir. Başlatıcı güncellemeleri uyumluluğu etkileyebilir.
+
+PPS bağımsız ve açık kaynaklı bir projedir. Google ve LSPosed projesi PPS’yi geliştirmez, finanse etmez veya resmî olarak desteklemez.

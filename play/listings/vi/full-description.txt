@@ -1,0 +1,5 @@
+PPS (Private Space Shortcuts) cho phép bạn mở bản ứng dụng đã cài trong Không gian riêng tư ngay từ màn hình chính. Hãy mở khóa Không gian riêng tư, nhấn giữ ứng dụng rồi chọn “Thêm vào màn hình chính”. Biểu tượng vẫn hiển thị trên màn hình chính khi Không gian riêng tư bị khóa. Nhấn vào biểu tượng để mở lời nhắc xác thực của Android. Nếu bạn hủy xác thực, ứng dụng sẽ không mở.
+
+Bạn cần điện thoại đã root và đã thiết lập Không gian riêng tư của Android, có LSPosed hoạt động cùng phiên bản Pixel Launcher tương thích. Bật PPS trong LSPosed, chỉ chọn Pixel Launcher rồi khởi động lại điện thoại. Tính năng tích hợp với trình chạy đã được thử nghiệm trên Android 17. Khả năng tương thích có thể thay đổi khi trình chạy được cập nhật.
+
+PPS là một dự án nguồn mở độc lập. Google và dự án LSPosed không phát triển, tài trợ hay chứng thực PPS.

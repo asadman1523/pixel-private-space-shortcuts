@@ -1,0 +1,5 @@
+PPS (Private Space Shortcuts) pozwala otwierać prywatną kopię aplikacji bezpośrednio z ekranu głównego. Odblokuj przestrzeń prywatną, przytrzymaj ikonę aplikacji i wybierz opcję dodania jej do ekranu głównego. Ikona pozostaje widoczna na ekranie głównym po zablokowaniu przestrzeni prywatnej. Gdy jej dotkniesz, Android poprosi o potwierdzenie tożsamości. Jeśli anulujesz, aplikacja się nie otworzy.
+
+Potrzebujesz telefonu z dostępem do konta root, przestrzeni prywatnej Androida, działającego LSPosed oraz zgodnej wersji Pixel Launcher. Włącz PPS w LSPosed, wybierz tylko Pixel Launcher, a następnie uruchom telefon ponownie. Integrację z programem uruchamiającym przetestowano na Androidzie 17. Aktualizacje programu uruchamiającego mogą wpływać na zgodność.
+
+PPS to niezależny projekt o otwartym kodzie źródłowym. Ani Google, ani projekt LSPosed nie tworzą, nie sponsorują ani nie rekomendują PPS.

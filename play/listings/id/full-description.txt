@@ -1,0 +1,5 @@
+Dengan PPS (Private Space Shortcuts), Anda dapat membuka salinan aplikasi yang terpasang di Ruang Pribadi langsung dari layar utama. Buka kunci Ruang Pribadi, tekan lama aplikasi, lalu pilih “Tambahkan ke layar utama”. Ikonnya tetap terlihat di layar utama saat Ruang Pribadi terkunci. Ketuk ikon untuk membuka permintaan autentikasi Android. Jika Anda membatalkan autentikasi, aplikasi tidak akan terbuka.
+
+Anda memerlukan ponsel dengan akses root dan Ruang Pribadi Android yang sudah disiapkan, LSPosed yang berfungsi, serta versi Pixel Launcher yang kompatibel. Aktifkan PPS di LSPosed, pilih hanya Pixel Launcher, lalu mulai ulang ponsel. Integrasi dengan peluncur telah diuji di Android 17. Kompatibilitas dapat berubah setelah pembaruan peluncur.
+
+PPS adalah proyek sumber terbuka yang independen. Google dan proyek LSPosed tidak mengembangkan, mensponsori, atau memberikan dukungan resmi kepada PPS.
